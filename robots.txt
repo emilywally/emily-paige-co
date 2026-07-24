@@ -1,0 +1,38 @@
+# Emily Paige & Co. — allow all search & AI crawlers
+
+User-agent: *
+Allow: /
+
+# Explicit allow for AI crawlers (visibility in AI assistants)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+# Search crawlers (already covered by * but explicit for clarity)
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+Sitemap: https://emilypaigeco.netlify.app/sitemap.xml
