@@ -1,4 +1,4 @@
-# Emily Paige & Co. — allow all search & AI crawlers
+# Emily Paige & Co. allow all search & AI crawlers
 
 User-agent: *
 Allow: /

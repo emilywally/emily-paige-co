@@ -1,4 +1,4 @@
-# Blog Standards — Emily Paige & Co. Journal
+# Blog Standards: Emily Paige & Co. Journal
 
 Every post follows these rules. When Claude drafts a new post, it uses this checklist.
 
@@ -7,7 +7,18 @@ Every post follows these rules. When Claude drafts a new post, it uses this chec
 - Written as Emily. First person. Warm, honest, unhurried, a little literary.
 - No hype, no hard-sell language.
 - Never invent client stories or make guarantees about home value or investment returns.
-- Milwaukee-first — use real neighborhood and street names when relevant.
+- Milwaukee-first. Use real neighborhood and street names when relevant.
+- **No em dashes.** Not the character, not the `&mdash;` entity. Rewrite the sentence instead: use a comma, a colon, a period, or parentheses. This is Emily's standing preference and applies to every post, headline, excerpt, and meta description.
+
+## Data rules (non-negotiable)
+
+Emily's readers are in Milwaukee. Statewide Wisconsin figures do not speak to them, and the Milwaukee market behaves differently from the rest of the state.
+
+- **Lead with metro Milwaukee.** Primary source is the Greater Milwaukee Association of REALTORS® monthly report (gmar.com), covering Milwaukee, Waukesha, Ozaukee and Washington counties.
+- Statewide WRA figures may appear **only as contrast**, to show why the state number misleads. Never as the headline number.
+- Go to the county or neighborhood level wherever the data allows.
+- Always label whether a figure is an **average or a median**. GMAR publishes averages, which run higher than medians.
+- Every statistic needs a named source and a date. Discard anything more than roughly two months stale rather than presenting it as current.
 
 ## Structure
 
@@ -15,14 +26,14 @@ Every post follows these rules. When Claude drafts a new post, it uses this chec
 - `<h2>`s phrased as real questions people Google (e.g., "How much does it cost to live in Bay View?").
 - 600–900 words is the sweet spot. Longer if the topic genuinely needs it.
 - Short paragraphs. Generous white space. Never a wall of text.
-- One "big idea" per post — resist the urge to cram in five.
+- One "big idea" per post. Resist the urge to cram in five.
 
 ## SEO on every post
 
 - **Title tag:** unique, ~55 chars max, includes the primary keyword naturally.
 - **Meta description:** ~155 chars, actively invites the click.
 - **URL slug:** kebab-case, keyword-forward, no dates in the URL.
-- Include local keywords (city, neighborhood, "Milwaukee") when contextually relevant — never forced.
+- Include local keywords (city, neighborhood, "Milwaukee") when contextually relevant, never forced.
 - One internal link to another post or a service page (About / Contact / Listings).
 - One link to Emily's contact or homepage.
 - All images have real, descriptive `alt` text (no "image1").
