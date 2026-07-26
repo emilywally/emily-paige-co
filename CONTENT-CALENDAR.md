@@ -2,7 +2,7 @@
 
 **Cadence rule:** 3 posts per week (Mon / Wed / Fri) until 15 posts published; then 1 post per week.
 
-**Posts published:** 1 / 15 established target
+**Posts published:** 2 / 15 established target
 **Current mode:** 3x weekly
 
 Every post follows `BLOG-STANDARDS.md`.
@@ -39,6 +39,7 @@ Mark ✅ when published, ⬜ when still in queue. Order flexible; pick what feel
 - ⬜ Selling a home you inherited — a compassionate guide
 
 ### Market updates
+- ✅ 2026-07-26 — Is now a good time to buy or sell in Milwaukee? *(evergreen; refresh stats quarterly)*
 - ⬜ Milwaukee market snapshot — Q3 2026
 - ⬜ What Milwaukee mortgage rates mean for buyers right now
 - ⬜ Inventory watch: what's changed this season
