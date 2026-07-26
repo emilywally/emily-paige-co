@@ -20,6 +20,22 @@
   [headers.values]
     Cache-Control = "public, max-age=86400"
 
+[[headers]]
+  for = "/videos/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Send the old Netlify address to the real domain.
+# Without this, Google can treat emilypaigeco.netlify.app and
+# emilypaigeandco.com as two competing copies of the same site, which
+# splits the search credit between them instead of building it up on one.
+# Must stay ABOVE the 404 rule: Netlify applies redirects in order.
+[[redirects]]
+  from = "https://emilypaigeco.netlify.app/*"
+  to = "https://emilypaigeandco.com/:splat"
+  status = 301
+  force = true
+
 # Ensure 404.html is used
 [[redirects]]
   from = "/*"

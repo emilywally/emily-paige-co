@@ -8,7 +8,7 @@ Static website for Emily Walczak (Emily Paige & Co.), a residential real estate 
 
 ## Editing this site
 
-Editing is done through a Claude chat (Cowork). The Website Update Playbook (kept in the owner's `My website` folder) has full instructions.
+Editing is done through a Claude chat (Cowork). See `WEBSITE-PLAYBOOK.md` in this repo for full instructions (a copy also lives in the owner's `My website` folder).
 
 ## Structure
 
