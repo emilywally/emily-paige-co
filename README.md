@@ -1,4 +1,4 @@
-# Emily Paige & Co. — Website
+# Emily Paige & Co. Website
 
 Static website for Emily Walczak (Emily Paige & Co.), a residential real estate team at Keller Williams serving greater Milwaukee.
 
@@ -12,19 +12,19 @@ Editing is done through a Claude chat (Cowork). The Website Update Playbook (kep
 
 ## Structure
 
-- `index.html` — homepage
-- `about.html` — About Emily
-- `listings.html` — Featured listings
-- `reviews.html` — Client reviews (from Realtor.com + direct)
-- `contact.html` — Contact page
-- `blog/` — Journal (blog)
-- `styles.css` — Single stylesheet, all pages
-- `images/` — Photography, hero images, avatars
-- `robots.txt`, `llms.txt`, `sitemap.xml` — Search and AI-search visibility
-- `404.html` — Custom not-found page
-- `netlify.toml` — Netlify config (headers, redirects)
-- `CONTENT-CALENDAR.md` — Blog post backlog
-- `BLOG-STANDARDS.md` — Rules for every post
+- `index.html`: homepage
+- `about.html`: About Emily
+- `listings.html`: Featured listings
+- `reviews.html`: Client reviews (from Realtor.com + direct)
+- `contact.html`: Contact page
+- `blog/`: Journal (blog)
+- `styles.css`: Single stylesheet, all pages
+- `images/`: Photography, hero images, avatars
+- `robots.txt`, `llms.txt`, `sitemap.xml`: Search and AI-search visibility
+- `404.html`: Custom not-found page
+- `netlify.toml`: Netlify config (headers, redirects)
+- `CONTENT-CALENDAR.md`: Blog post backlog
+- `BLOG-STANDARDS.md`: Rules for every post
 
 ## Compliance
 
