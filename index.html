@@ -179,11 +179,35 @@
       </div>
       <div style="max-width: 380px; margin: 48px auto 0; position: relative; border-radius: 12px; overflow: hidden; box-shadow: 0 30px 80px -30px rgba(0, 0, 0, 0.6); background: rgba(239, 231, 218, 0.06);">
         <div style="padding-bottom: 125%;"></div>
-        <video autoplay loop muted playsinline preload="auto" poster="/videos/clips/clip-01-poster.jpg" style="position: absolute; inset: 0; width:100%; height:100%; object-fit: cover; display: block;">
-          <source src="/videos/champagne-montage.mp4?v=2" type="video/mp4">
+        <video id="champagne-vid"
+               src="/videos/champagne-montage.mp4?v=4"
+               poster="/videos/clips/clip-01-poster.jpg"
+               autoplay muted loop playsinline webkit-playsinline
+               preload="auto"
+               style="position: absolute; inset: 0; width:100%; height:100%; object-fit: cover; display: block; background: #3E2A23;"
+               onclick="this.paused ? this.play() : (this.muted = !this.muted)">
           Your browser doesn't support video. <a href="/videos/champagne-montage.mp4" style="color: var(--rose-soft);">Download the montage</a>.
         </video>
       </div>
+      <script>
+        (function(){
+          var v = document.getElementById('champagne-vid');
+          if (!v) return;
+          v.muted = true;
+          v.setAttribute('muted', '');
+          function tryPlay(){ var p = v.play(); if (p && p.catch) p.catch(function(){}); }
+          tryPlay();
+          v.addEventListener('canplay', tryPlay);
+          v.addEventListener('loadeddata', tryPlay);
+          document.addEventListener('visibilitychange', function(){ if (!document.hidden) tryPlay(); });
+          // Play when it scrolls into view (some browsers pause off-screen videos)
+          if ('IntersectionObserver' in window) {
+            new IntersectionObserver(function(entries){
+              entries.forEach(function(e){ if (e.isIntersecting) tryPlay(); });
+            }, { threshold: 0.1 }).observe(v);
+          }
+        })();
+      </script>
       <p style="text-align:center;margin-top:48px;font-size:0.9rem;color:rgba(239, 231, 218, 0.65);">Every one of these started with a conversation. Yours can too.</p>
     </div>
   </section>
