@@ -4,13 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>About Emily Walczak | Emily Paige &amp; Co.</title>
-<meta name="description" content="Emily Walczak is a Milwaukee realtor and founder of Emily Paige &amp; Co. at Keller Williams. A third-generation entrepreneur guiding buyers and sellers with patience, honesty, and steady presence.">
-<link rel="canonical" href="https://emilypaigeco.netlify.app/about.html">
+<meta name="description" content="Emily Walczak is a Milwaukee realtor and founder of Emily Paige & Co. at Keller Williams. A third-generation entrepreneur guiding buyers and sellers with patience, honesty, and steady presence.">
+<link rel="canonical" href="https://emilypaigeandco.com/about.html">
 <meta property="og:type" content="profile">
 <meta property="og:title" content="About Emily Walczak">
 <meta property="og:description" content="A Milwaukee realtor guiding buyers and sellers with patience, honesty, and steady presence.">
-<meta property="og:image" content="https://emilypaigeco.netlify.app/images/og-image.jpg">
-<meta property="og:url" content="https://emilypaigeco.netlify.app/about.html">
+<meta property="og:image" content="https://emilypaigeandco.com/images/og-image.jpg">
+<meta property="og:url" content="https://emilypaigeandco.com/about.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..500;1,9..144,300..500&amp;family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -22,7 +22,7 @@
   "@type": "Person",
   "name": "Emily Walczak",
   "jobTitle": "Realtor",
-  "image": "https://emilypaigeco.netlify.app/images/emily-about.jpg",
+  "image": "https://emilypaigeandco.com/images/emily-about.jpg",
   "worksFor": {
     "@type": "Organization",
     "name": "Keller Williams"
@@ -31,7 +31,7 @@
     "@type": "CollegeOrUniversity",
     "name": "University of Wisconsin-Milwaukee"
   },
-  "url": "https://emilypaigeco.netlify.app/about.html",
+  "url": "https://emilypaigeandco.com/about.html",
   "sameAs": [
     "https://www.instagram.com/emilywalczak.realtor",
     "https://www.tiktok.com/@emilywalczak.realtor"
@@ -72,13 +72,34 @@
         <h1>Emily Walczak</h1>
         <p class="lede">Founder, Emily Paige &amp; Co. &middot; Realtor at Keller Williams &middot; Milwaukee, Wisconsin.</p>
         <div class="hero-cta">
-          <a href="/#start" class="btn btn-primary">Start Here</a>
+          <a href="/#start" class="btn btn-primary">Start with a Conversation</a>
           <a href="/contact.html" class="btn btn-ghost">Get in touch</a>
         </div>
       </div>
       <div class="hero-image">
         <img src="/images/emily-about.jpg" alt="Portrait of Emily Walczak, Milwaukee realtor" loading="eager">
       </div>
+    </div>
+  </section>
+
+  <!-- VIDEO INTRO -->
+  <section class="video-section">
+    <div class="wrap-narrow">
+      <span class="eyebrow video-eyebrow">Meet Emily</span>
+      <h2>Hear it from her.</h2>
+      <p class="lede" style="max-width: 42ch; margin: 16px auto 0;">A quick introduction &mdash; who I am, why I do this, and how I work with clients.</p>
+    </div>
+    <div class="video-frame">
+      <div class="video-poster" onclick="var v=this.parentNode.querySelector('video');this.style.display='none';v.style.display='block';v.controls=true;v.play();">
+        <img src="/videos/emily-intro-poster.jpg" alt="Video introduction from Emily Walczak">
+        <div class="video-play-btn" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+        </div>
+      </div>
+      <video preload="metadata" playsinline style="display:none;">
+        <source src="/videos/emily-intro.mp4" type="video/mp4">
+        Your browser doesn't support video playback. <a href="/videos/emily-intro.mp4">Download the video</a>.
+      </video>
     </div>
   </section>
 
@@ -156,6 +177,22 @@
     </div>
   </div>
 </footer>
+
+<!-- Sticky mobile CTA bar -->
+<div class="mobile-cta-bar" role="navigation" aria-label="Quick contact">
+  <a href="tel:+12623300037" aria-label="Call Emily">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z"/></svg>
+    Call
+  </a>
+  <a href="sms:+12623300037" aria-label="Text Emily">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+    Text
+  </a>
+  <a href="/#start" class="primary" aria-label="Start here">
+    Start Here &rarr;
+  </a>
+</div>
+
 <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
 </body>
 </html>

@@ -35,4 +35,4 @@ Allow: /
 User-agent: Bingbot
 Allow: /
 
-Sitemap: https://emilypaigeco.netlify.app/sitemap.xml
+Sitemap: https://emilypaigeandco.com/sitemap.xml
