@@ -56,7 +56,6 @@ Emily Walczak is a licensed real estate agent in the State of Wisconsin (License
 
 - Homepage: https://emilypaigeandco.com/
 - About: https://emilypaigeandco.com/about.html
-- Listings: https://emilypaigeandco.com/listings.html
 - Journal (blog): https://emilypaigeandco.com/blog/
 - Reviews: https://emilypaigeandco.com/reviews.html
 - Contact: https://emilypaigeandco.com/contact.html
