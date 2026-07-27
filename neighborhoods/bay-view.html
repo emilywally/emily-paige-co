@@ -222,16 +222,28 @@ var burgundyPin = L.divIcon({
 });
 
 // A few of Emily's favorite Bay View spots
-// Coordinates verified from each source noted; not guessed.
+// All coordinates verified via each source's own map data. Not guessed.
 var spots = [
-  // South Shore Park, 2900 S Shore Dr — Milwaukee County Parks
-  { name: 'Bay View Beach at South Shore Park', desc: '2900 S Shore Dr. Beach, lakefront, and the Saturday farmers market June through October.', lat: 42.993149, lng: -87.878218 },
-  // Tenuta's Italian Restaurant, 2995 S Clement Ave — tenutasitalian.com
-  { name: "Tenuta's Italian Restaurant", desc: '2995 S Clement Ave. Neighborhood Italian institution.', lat: 42.989775, lng: -87.894433 },
-  // The Wiggle Room, 2988 S Kinnickinnic Ave — Wanderlog / Roadtrippers
-  { name: 'The Wiggle Room', desc: '2988 S Kinnickinnic Ave. Vinyl listening lounge on KK.', lat: 42.990479, lng: -87.885013 },
-  // Hi-Fi Cafe, 2640 S Kinnickinnic Ave — Wanderlog
-  { name: 'Hi-Fi Cafe', desc: '2640 S Kinnickinnic Ave. Long-standing Bay View coffee spot.', lat: 42.997002, lng: -87.898382 }
+  // Parks + outdoors
+  { name: 'Bay View Beach at South Shore Park', desc: '2900 S Shore Dr. Beach and lakefront park. Saturday farmers market June through October.', lat: 42.993149, lng: -87.878218 },
+  { name: 'Humboldt Park', desc: '3000 S Howell Ave. Inland park with lagoon, playground, and outdoor concerts.', lat: 42.990013, lng: -87.900564 },
+
+  // Food
+  { name: "Tenuta's Italian Restaurant", desc: '2995 S Clement Ave. Italian restaurant.', lat: 42.989775, lng: -87.894433 },
+  { name: 'Honeypie Cafe', desc: '2569 S Kinnickinnic Ave. Brunch and American cafe.', lat: 42.997957, lng: -87.90046 },
+
+  // Coffee
+  { name: 'Hi-Fi Cafe', desc: '2640 S Kinnickinnic Ave. Coffee shop on KK.', lat: 42.997002, lng: -87.898382 },
+  { name: 'Anodyne Coffee (Bay View)', desc: '2920 S Kinnickinnic Ave. Coffee roaster and cafe.', lat: 42.9918, lng: -87.886558 },
+
+  // Bars + music
+  { name: 'The Wiggle Room', desc: '2988 S Kinnickinnic Ave. Vinyl listening lounge.', lat: 42.990479, lng: -87.885013 },
+  { name: 'At Random', desc: '2501 S Delaware Ave. Cocktail lounge.', lat: 42.997859, lng: -87.891247 },
+  { name: 'Burnhearts', desc: '2599 S Logan Ave. Bar.', lat: 42.997258, lng: -87.89702 },
+  { name: 'Cactus Club', desc: '2496 S Wentworth Ave. Live music venue.', lat: 42.999039, lng: -87.890171 },
+
+  // Shops
+  { name: 'Plume', desc: '3001 S Kinnickinnic Ave. Vintage and modern boutique.', lat: 42.990055, lng: -87.885133 }
 ];
 
 // Fit the map to the pins so all four are visible
