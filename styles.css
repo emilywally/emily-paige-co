@@ -845,3 +845,20 @@ section { padding: clamp(60px, 10vw, 120px) 0; }
   color: var(--rose);
   font-weight: 500;
 }
+
+/* Market snapshot + IG grid — 2 cols on desktop */
+@media (min-width: 720px) {
+  .mkt-grid[data-cols="2"] { grid-template-columns: 1fr 1fr !important; }
+}
+
+/* Neighborhood chip link styling */
+.area {
+  transition: color 0.2s ease, background 0.2s ease;
+  padding: 20px 12px;
+  border-radius: 4px;
+  text-decoration: none !important;
+}
+.area:hover {
+  color: var(--rose-soft) !important;
+  background: rgba(239, 231, 218, 0.08);
+}
