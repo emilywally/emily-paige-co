@@ -2,7 +2,7 @@
 
 **Cadence rule:** 1 post per week, drafted Monday morning. (Set by Emily 2026-07-26, replacing the earlier 3x-weekly ramp; one well-researched post beats three thin ones.)
 
-**Posts published:** 2
+**Posts published:** 3
 **Current mode:** weekly
 
 ## Data rules (non-negotiable)
@@ -34,6 +34,7 @@ Mark ✅ when published, ⬜ when still in queue. Order flexible; pick what feel
 - ⬜ Cudahy, St. Francis, Oak Creek: the underrated south shore
 
 ### First-time buyer education
+- ✅ 2026-07-28, How mortgage pre-approval actually works when you’re buying in Milwaukee *(Follow Up Boss: 7+ leads asked about pre-approval / lender confusion in the last 3 weeks)*
 - ⬜ The Milwaukee first-time buyer roadmap: 8 steps from "curious" to "closed"
 - ⬜ How much house can I actually afford? (Milwaukee-specific)
 - ⬜ Wisconsin first-time buyer programs worth knowing about
