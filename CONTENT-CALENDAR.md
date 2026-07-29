@@ -34,7 +34,7 @@ Mark ✅ when published, ⬜ when still in queue. Order flexible; pick what feel
 - ⬜ Cudahy, St. Francis, Oak Creek: the underrated south shore
 
 ### First-time buyer education
-- ✅ 2026-07-28, How mortgage pre-approval actually works when you’re buying in Milwaukee *(Follow Up Boss: 7+ leads asked about pre-approval / lender confusion in the last 3 weeks)*
+- ✅ 2026-07-28, Mortgage pre-approval, in plain English *(Follow Up Boss: 7+ leads asked about pre-approval / lender confusion in the last 3 weeks; reframed as evergreen buyer guide per Emily)*
 - ⬜ The Milwaukee first-time buyer roadmap: 8 steps from "curious" to "closed"
 - ⬜ How much house can I actually afford? (Milwaukee-specific)
 - ⬜ Wisconsin first-time buyer programs worth knowing about
