@@ -46,6 +46,16 @@
   }
 }
 </script>
+<!-- Google tag (GA4) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX', { anonymize_ip: true });
+</script>
+<script defer src="/analytics.js"></script>
+<!-- /GA4 -->
 </head>
 <body>
 <a href="#main" class="sr-only">Skip to content</a>
@@ -122,12 +132,12 @@
           <div>
             <p style="font-family: var(--serif); font-size: 1.15rem; font-weight: 500; color: var(--cocoa); margin: 0 0 6px;">The 12-Month to Homeownership Guide</p>
             <p style="color: var(--cocoa-soft); margin: 0 0 12px; font-size: 0.95rem;">The full step-by-step path from twelve months out to keys in hand.</p>
-            <a href="https://emilywalczak.myflodesk.com/ebrsw6diwj" class="btn-ghost" target="_blank" rel="noopener">Download the guide</a>
+            <a href="https://emilywalczak.myflodesk.com/ebrsw6diwj" class="btn-ghost" target="_blank" rel="noopener" data-track="guide_12month_click">Download the guide</a>
           </div>
           <div>
             <p style="font-family: var(--serif); font-size: 1.15rem; font-weight: 500; color: var(--cocoa); margin: 0 0 6px;">The Milwaukee Local Guide</p>
             <p style="color: var(--cocoa-soft); margin: 0 0 12px; font-size: 0.95rem;">Where to live, eat, walk, and settle in. My honest take.</p>
-            <a href="https://emilywalczak.myflodesk.com/g89xageera" class="btn-ghost" target="_blank" rel="noopener">Get the local guide</a>
+            <a href="https://emilywalczak.myflodesk.com/g89xageera" class="btn-ghost" target="_blank" rel="noopener" data-track="guide_local_click">Get the local guide</a>
           </div>
         </div>
       </aside>
@@ -178,8 +188,8 @@
       <div class="footer-col">
         <h4>Contact</h4>
         <ul>
-          <li><a href="tel:+12623300037">262-330-0037</a></li>
-          <li><a href="mailto:emilywalczak@kw.com">emilywalczak@kw.com</a></li>
+          <li><a href="tel:+12623300037" data-track="phone_click">262-330-0037</a></li>
+          <li><a href="mailto:emilywalczak@kw.com" data-track="email_click">emilywalczak@kw.com</a></li>
           <li><a href="https://www.instagram.com/emilywalczak.realtor" target="_blank" rel="noopener">Instagram</a></li>
           <li><a href="https://www.tiktok.com/@emilywalczak.realtor" target="_blank" rel="noopener">TikTok</a></li>
         </ul>

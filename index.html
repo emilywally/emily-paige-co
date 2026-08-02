@@ -96,6 +96,16 @@
   }
 }
 </script>
+<!-- Google tag (GA4) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX', { anonymize_ip: true });
+</script>
+<script defer src="/analytics.js"></script>
+<!-- /GA4 -->
 </head>
 <body>
 
@@ -187,14 +197,14 @@
           <span class="eyebrow">For Buyers</span>
           <h3>I'm looking for a home.</h3>
           <p>Your first place or your fifth, we start the same way: a real conversation about what matters to you. Neighborhoods, must-haves, timeline, budget, and the answers to whatever you're not sure how to ask.</p>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeIEXEpYS7b6PGHI2Q-2ftXEj_t1JvkCCItX0kifrfZWOMoNA/viewform" class="btn btn-primary" target="_blank" rel="noopener">Tell Me What You're Looking For &rarr;</a>
-          <a href="https://emilywalczak.myflodesk.com/ebrsw6diwj" target="_blank" rel="noopener" style="display: inline-block; margin-top: 14px; font-family: var(--sans); font-size: 0.82rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--rose); font-weight: 500;">Not ready? Grab the free 12-Month to Homeownership Guide &rarr;</a>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeIEXEpYS7b6PGHI2Q-2ftXEj_t1JvkCCItX0kifrfZWOMoNA/viewform" class="btn btn-primary" target="_blank" rel="noopener" data-track="questionnaire_buyer_start">Tell Me What You're Looking For &rarr;</a>
+          <a href="https://emilywalczak.myflodesk.com/ebrsw6diwj" target="_blank" rel="noopener" style="display: inline-block; margin-top: 14px; font-family: var(--sans); font-size: 0.82rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--rose); font-weight: 500;" data-track="guide_12month_click">Not ready? Grab the free 12-Month to Homeownership Guide &rarr;</a>
         </div>
         <div class="fork-card">
           <span class="eyebrow">For Sellers</span>
           <h3>I'm ready to sell.</h3>
           <p>Selling is usually the bigger transition. A chapter closing, a next chapter beginning. We'll walk through pricing, prep, and strategy together with zero pressure, and I'll make sure the process feels manageable from list day to close day.</p>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLScoLaueGe5tDapclq1qIp-3wDiBnnaTF2VYSMWSAKMpxW0W8A/viewform" class="btn btn-primary" target="_blank" rel="noopener">Tell Me About Your Home &rarr;</a>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLScoLaueGe5tDapclq1qIp-3wDiBnnaTF2VYSMWSAKMpxW0W8A/viewform" class="btn btn-primary" target="_blank" rel="noopener" data-track="questionnaire_seller_start">Tell Me About Your Home &rarr;</a>
         </div>
       </div>
     </div>
@@ -273,7 +283,7 @@
           <hr style="border: 0; border-top: 1px solid rgba(239, 231, 218, 0.15); margin: 32px 0 24px;">
           <div>
             <p style="color: rgba(239, 231, 218, 0.85); font-size: 0.9rem; margin-bottom: 12px;"><strong style="color: var(--cream);">New to Milwaukee?</strong> Grab the free local guide, no strings attached.</p>
-            <a href="https://emilywalczak.myflodesk.com/g89xageera" target="_blank" rel="noopener" style="color: var(--rose-soft); font-family: var(--sans); font-size: 0.85rem; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 500;">Get the Local Guide &rarr;</a>
+            <a href="https://emilywalczak.myflodesk.com/g89xageera" target="_blank" rel="noopener" style="color: var(--rose-soft); font-family: var(--sans); font-size: 0.85rem; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 500;" data-track="guide_local_click">Get the Local Guide &rarr;</a>
           </div>
         </div>
       </div>
@@ -368,7 +378,7 @@
       <p>Start with the questionnaire that fits. Or call, text, or email. Whichever feels easiest.</p>
       <div class="hero-cta" style="justify-content: center;">
         <a href="#start" class="btn btn-primary">Let's Talk About Your Move</a>
-        <a href="tel:+12623300037" class="btn btn-secondary">Call &middot; 262-330-0037</a>
+        <a href="tel:+12623300037" class="btn btn-secondary" data-track="phone_click">Call &middot; 262-330-0037</a>
       </div>
     </div>
   </section>
@@ -398,8 +408,8 @@
       <div class="footer-col">
         <h4>Contact</h4>
         <ul>
-          <li><a href="tel:+12623300037">262-330-0037</a></li>
-          <li><a href="mailto:emilywalczak@kw.com">emilywalczak@kw.com</a></li>
+          <li><a href="tel:+12623300037" data-track="phone_click">262-330-0037</a></li>
+          <li><a href="mailto:emilywalczak@kw.com" data-track="email_click">emilywalczak@kw.com</a></li>
           <li><a href="https://www.instagram.com/emilywalczak.realtor" target="_blank" rel="noopener">Instagram</a></li>
           <li><a href="https://www.tiktok.com/@emilywalczak.realtor" target="_blank" rel="noopener">TikTok</a></li>
         </ul>
@@ -426,11 +436,11 @@
 
 <!-- Sticky mobile CTA bar -->
 <div class="mobile-cta-bar" role="navigation" aria-label="Quick contact">
-  <a href="tel:+12623300037" aria-label="Call Emily">
+  <a href="tel:+12623300037" aria-label="Call Emily" data-track="phone_click">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z"/></svg>
     Call
   </a>
-  <a href="sms:+12623300037" aria-label="Text Emily">
+  <a href="sms:+12623300037" aria-label="Text Emily" data-track="sms_click">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
     Text
   </a>
