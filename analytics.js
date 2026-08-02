@@ -1,4 +1,4 @@
-// Emily Paige & Co. — GA4 event tracking
+// Emily Paige & Co. GA4 event tracking
 // Fires custom events on key conversion clicks so we can see what's actually driving leads.
 // Wire elements with data-track="event_name" to have their clicks reported to GA4.
 (function() {
