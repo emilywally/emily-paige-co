@@ -947,8 +947,8 @@ section { padding: clamp(60px, 10vw, 120px) 0; }
 
 /* --- Flanking key icons on About Emily section --- */
 .about-with-keys { position: relative; }
-.about-key { position: absolute; top: 50%; transform: translateY(-50%); width: 56px; height: auto; opacity: 0.85; }
-.about-key-left { left: -20px; }
-.about-key-right { right: -20px; }
+.about-key { position: absolute; top: 50%; transform: translateY(-50%); width: 68px; height: auto; opacity: 0.9; }
+.about-key-left { left: 8px; }
+.about-key-right { right: 8px; }
 @media (max-width: 780px) { .about-key { width: 40px; opacity: 0.7; } .about-key-left { left: 0; } .about-key-right { right: 0; } }
 @media (max-width: 500px) { .about-key { display: none; } }
