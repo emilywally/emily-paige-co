@@ -921,3 +921,38 @@ section { padding: clamp(60px, 10vw, 120px) 0; }
   line-height: 1.7;
 }
 .faq-body p { max-width: none; margin: 0; }
+
+/* --- Split hero refinement (portrait sits alongside copy on desktop) --- */
+.hero-grid { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: clamp(32px, 5vw, 72px); align-items: center; }
+.hero-image { position: relative; }
+.hero-image img { width: 100%; height: auto; max-height: 640px; object-fit: cover; border-radius: 4px; display: block; }
+.hero-image::after { content: ""; position: absolute; inset: 12px -12px -12px 12px; border: 1px solid var(--cocoa-line); border-radius: 4px; z-index: -1; }
+@media (max-width: 780px) {
+  .hero-grid { grid-template-columns: 1fr; }
+  .hero-image::after { display: none; }
+}
+
+/* --- Where I Work photo grid --- */
+.neighborhood-tiles { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-top: 40px; }
+.neighborhood-tile { position: relative; aspect-ratio: 3/4; border-radius: 6px; overflow: hidden; display: block; text-decoration: none; color: var(--cream); transition: transform 0.35s ease; }
+.neighborhood-tile img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.6s ease; }
+.neighborhood-tile::before { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,0) 45%, rgba(0,0,0,0.65) 100%); z-index: 1; }
+.neighborhood-tile-label { position: absolute; bottom: 14px; left: 16px; right: 16px; font-family: var(--serif); font-size: 1.15rem; font-weight: 400; color: var(--cream); z-index: 2; letter-spacing: 0.005em; }
+.neighborhood-tile:hover img { transform: scale(1.04); }
+@media (max-width: 900px) { .neighborhood-tiles { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 480px) { .neighborhood-tiles { grid-template-columns: repeat(2, 1fr); gap: 10px; } .neighborhood-tile-label { font-size: 1rem; bottom: 10px; left: 12px; } }
+
+/* --- Icon accent on fork/service tiles --- */
+.tile-icon { width: 40px; height: 40px; color: var(--rose); margin-bottom: 18px; display: block; }
+.tile-icon svg { width: 100%; height: 100%; display: block; }
+
+/* --- Instagram strip --- */
+.ig-strip { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-top: 32px; }
+.ig-tile { position: relative; aspect-ratio: 1/1; overflow: hidden; border-radius: 4px; display: block; background: var(--cream-warm); }
+.ig-tile img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.5s ease; }
+.ig-tile::after { content: ""; position: absolute; inset: 0; background: rgba(62, 42, 35, 0); transition: background 0.3s ease; }
+.ig-tile:hover img { transform: scale(1.05); }
+.ig-tile:hover::after { background: rgba(62, 42, 35, 0.12); }
+.ig-tile-mark { position: absolute; top: 10px; right: 10px; width: 22px; height: 22px; color: var(--cream); z-index: 2; opacity: 0.9; }
+@media (max-width: 700px) { .ig-strip { grid-template-columns: repeat(2, 1fr); } }
+
