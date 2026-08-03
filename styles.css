@@ -946,12 +946,12 @@ section { padding: clamp(60px, 10vw, 120px) 0; }
 .blog-preview-photo .blog-preview-body :last-child { margin-bottom: 0; }
 
 /* --- Flanking key icons on About Emily section --- */
-.about-with-keys { position: relative; }
-.about-key { position: absolute; top: 50%; transform: translateY(-50%); width: 68px; height: auto; opacity: 0.9; }
-.about-key-left { left: 8px; }
-.about-key-right { right: 8px; }
-@media (max-width: 780px) { .about-key { width: 40px; opacity: 0.7; } .about-key-left { left: 0; } .about-key-right { right: 0; } }
-@media (max-width: 500px) { .about-key { display: none; } }
+.about-with-keys { position: relative; padding-left: 80px; padding-right: 80px; }
+.about-key { position: absolute; top: 50%; transform: translateY(-50%); width: 50px; height: auto; opacity: 0.9; }
+.about-key-left { left: 12px; }
+.about-key-right { right: 12px; }
+@media (max-width: 780px) { .about-with-keys { padding-left: 60px; padding-right: 60px; } .about-key { width: 36px; opacity: 0.75; } .about-key-left { left: 4px; } .about-key-right { right: 4px; } }
+@media (max-width: 500px) { .about-with-keys { padding-left: 0; padding-right: 0; } .about-key { display: none; } }
 
 /* --- Cottage icon next to Where I Work heading --- */
 .wiw-heading { position: relative; padding-left: 100px; }
