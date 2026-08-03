@@ -952,3 +952,15 @@ section { padding: clamp(60px, 10vw, 120px) 0; }
 .about-key-right { right: 8px; }
 @media (max-width: 780px) { .about-key { width: 40px; opacity: 0.7; } .about-key-left { left: 0; } .about-key-right { right: 0; } }
 @media (max-width: 500px) { .about-key { display: none; } }
+
+/* --- Cottage icon next to Where I Work heading --- */
+.wiw-heading { position: relative; padding-left: 100px; }
+.wiw-cottage { position: absolute; left: 0; top: 0; width: 84px; height: auto; opacity: 0.9; filter: brightness(0) invert(0.94); }
+@media (max-width: 720px) {
+  .wiw-heading { padding-left: 68px; }
+  .wiw-cottage { width: 54px; }
+}
+@media (max-width: 480px) {
+  .wiw-heading { padding-left: 0; text-align: left; }
+  .wiw-cottage { position: static; margin: 0 0 12px; width: 60px; }
+}
