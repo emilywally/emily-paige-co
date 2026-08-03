@@ -922,12 +922,16 @@ section { padding: clamp(60px, 10vw, 120px) 0; }
 }
 .faq-body p { max-width: none; margin: 0; }
 
-/* --- Instagram embed row (live iframes, auto-updates from IG) --- */
+/* --- Instagram embed row: crop iframe to show just the photo ---
+   IG embed iframe has header (username + follower + View profile button)
+   at top and like/comment/caption UI below the photo. We pull the iframe
+   up to hide the header, make it tall enough for the photo to fill the
+   visible box, and overflow: hidden clips the rest. Fragile if IG
+   changes its embed layout, but works today. */
 .ig-row { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-top: 24px; }
-.ig-embed { background: var(--cream); border-radius: 4px; overflow: hidden; position: relative; }
-.ig-embed iframe { width: 100%; height: 480px; border: 0; display: block; }
-@media (min-width: 900px) { .ig-row { grid-template-columns: repeat(4, 1fr); } .ig-embed iframe { height: 420px; } }
-@media (max-width: 500px) { .ig-row { grid-template-columns: 1fr; } .ig-embed iframe { height: 520px; } }
+.ig-embed { position: relative; overflow: hidden; border-radius: 4px; background: var(--cream); aspect-ratio: 1 / 1; }
+.ig-embed iframe { position: absolute; top: -72px; left: -1px; width: calc(100% + 2px); height: 720px; border: 0; display: block; }
+@media (min-width: 900px) { .ig-row { grid-template-columns: repeat(4, 1fr); } }
 
 
 
