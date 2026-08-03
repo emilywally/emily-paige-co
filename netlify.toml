@@ -36,6 +36,15 @@
   status = 301
   force = true
 
+# Serve favicon.svg when browsers request /favicon.ico.
+# Every browser/scraper requests /favicon.ico by default even when we
+# link /favicon.svg. This turns 46+ weekly 404s into cached 200s.
+[[redirects]]
+  from = "/favicon.ico"
+  to = "/favicon.svg"
+  status = 301
+  force = true
+
 # Ensure 404.html is used
 [[redirects]]
   from = "/*"
