@@ -31,7 +31,10 @@
   --serif: 'Fraunces', 'Cormorant Garamond', Georgia, serif;
   --serif-body: 'Lora', 'Fraunces', Georgia, serif;
   --sans: 'Inter', 'Helvetica Neue', system-ui, -apple-system, sans-serif;
-  --script: 'Homemade Apple', 'Caveat', 'Brush Script MT', cursive;
+  /* Signature script — Homemade Apple loads slowly; Caveat and Sacramento
+     are proven-fast Google Fonts fallbacks that keep the handwritten feel. */
+  --script: 'Homemade Apple', 'Sacramento', 'Caveat', 'Snell Roundhand',
+            'Brush Script MT', cursive;
 
   --page-max: 1240px;
   --page-pad-x: clamp(20px, 5vw, 56px);
@@ -77,6 +80,9 @@ h3 { font-size: clamp(1.3rem, 2.2vw, 1.6rem); font-weight: 500; color: var(--coc
 h4 { font-size: 1.05rem; font-family: var(--sans); font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--rose); }
 /* Handwritten script accent — for eyebrow captions and personal moments. */
 .script { font-family: var(--script); font-weight: 400; color: var(--burgundy); }
+
+/* Hero image must position:relative so the brand seal can float on it. */
+.hero-image { position: relative; }
 p { margin: 0 0 1.2em; max-width: 65ch; }
 p.lede { font-size: 1.2rem; color: var(--cocoa-soft); line-height: 1.55; }
 .eyebrow {
@@ -126,9 +132,12 @@ section { padding: clamp(60px, 10vw, 120px) 0; }
 }
 .wordmark img {
   display: block;
-  height: 60px;
+  height: 84px;
   width: auto;
-  max-width: 240px;
+  max-width: 320px;
+}
+@media (max-width: 720px) {
+  .wordmark img { height: 56px; max-width: 200px; }
 }
 .wordmark .top,
 .wordmark .sub,
@@ -257,16 +266,38 @@ section { padding: clamp(60px, 10vw, 120px) 0; }
 .hero-image {
   position: relative;
   aspect-ratio: 4 / 5;
-  overflow: hidden;
+  border-radius: 4px;
+  /* No overflow:hidden so the brand seal can float off the edge. */
+}
+/* Only the FIRST img (the portrait) fills the container; the second img
+   is the brand seal and keeps its inline dimensions. */
+.hero-image > img:first-of-type {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 20%;
   border-radius: 4px;
 }
-.hero-image img { width: 100%; height: 100%; object-fit: cover; object-position: center 20%; }
 .hero-image::after {
   content: '';
   position: absolute;
   inset: 0;
-  box-shadow: inset 0 -60px 120px rgba(62, 42, 35, 0.12);
+  box-shadow: inset 0 -60px 120px rgba(74, 45, 34, 0.12);
   pointer-events: none;
+  border-radius: 4px;
+}
+/* Brand seal overlay — floats off the bottom-right of the hero photo. */
+.hero-image .brand-seal {
+  position: absolute;
+  bottom: -48px;
+  right: -48px;
+  width: 240px;
+  height: auto;
+  z-index: 3;
+  filter: drop-shadow(0 12px 28px rgba(74, 45, 34, 0.32));
+}
+@media (max-width: 720px) {
+  .hero-image .brand-seal { width: 140px; bottom: -24px; right: -24px; }
 }
 
 /* Intent fork (buying / selling) -------------------------------------- */

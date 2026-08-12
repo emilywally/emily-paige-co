@@ -14,7 +14,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..500;1,9..144,300..500&amp;family=Lora:ital,wght@0,400;0,500;0,600;1,400&amp;family=Inter:wght@400;500;600&amp;family=Homemade+Apple&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..500;1,9..144,300..500&amp;family=Lora:ital,wght@0,400;0,500;0,600;1,400&amp;family=Inter:wght@400;500;600&amp;family=Homemade+Apple&amp;family=Sacramento&amp;family=Caveat&amp;display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/styles.css?v=brand2026">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <script type="application/ld+json">
@@ -138,12 +138,31 @@
 
 <main id="main">
 
+  <!-- BRAND BAND — burgundy full-bleed with pattern texture, sets the tone -->
+  <section aria-hidden="true" style="
+    background:
+      radial-gradient(ellipse at top, rgba(255,255,255,0.06) 0, transparent 60%),
+      url('/images/brand/pattern-burgundy.png') center/440px repeat,
+      var(--burgundy);
+    color: var(--cream);
+    padding: 22px 0;
+    text-align: center;
+    border-bottom: 3px solid var(--chestnut);
+    background-blend-mode: overlay, normal, normal;
+  ">
+    <div class="wrap" style="display: flex; align-items: center; justify-content: center; gap: 32px; flex-wrap: wrap;">
+      <span style="font-family: var(--script); font-size: clamp(1.6rem, 3vw, 2.2rem); color: var(--cream); line-height: 1;">Homes with meaning.</span>
+      <span style="font-family: var(--sans); font-size: 0.72rem; letter-spacing: 0.32em; text-transform: uppercase; color: rgba(237,232,222,0.75);">Emily Paige &amp; Co. · Milwaukee, Wisconsin · Real Estate</span>
+    </div>
+  </section>
+
   <!-- HERO -->
   <section class="hero">
     <div class="wrap hero-grid">
       <div class="hero-copy">
         <span class="eyebrow">Emily Paige &amp; Co. · Milwaukee, Wisconsin</span>
         <h1>Real estate for the life you're building.</h1>
+        <p class="script" style="font-size: 1.6rem; margin: -8px 0 20px; line-height: 1;">Homes with meaning.</p>
         <p class="lede">Milwaukee real estate with expert guidance, a design-forward eye for home, and a client experience that actually feels personal. Whether you're buying your first place or selling to move up, the process should feel clear, exciting, and taken care of.</p>
         <div class="hero-cta">
           <a href="#start" class="btn btn-primary">Start with a Conversation</a>
@@ -159,6 +178,7 @@
       </div>
       <div class="hero-image">
         <img src="/images/emily-large.jpg" alt="Emily Walczak, Milwaukee realtor and founder of Emily Paige and Co." loading="eager">
+        <img class="brand-seal" src="/images/brand/frame-burgundy.svg" alt="Emily Paige & Co. — Homes With Meaning">
       </div>
     </div>
   </section>
@@ -169,7 +189,7 @@
     <div class="wrap">
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 32px; text-align: center;">
         <div>
-          <div style="font-family: var(--serif); font-size: clamp(2rem, 4vw, 3rem); font-weight: 300; color: var(--cream); line-height: 1;">70+</div>
+          <div style="font-family: var(--serif); font-size: clamp(2rem, 4vw, 3rem); font-weight: 300; color: var(--cream); line-height: 1;">100%</div>
           <div style="font-family: var(--sans); font-size: 0.78rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--rose-soft); margin-top: 8px; font-weight: 500;">Five-Star Reviews</div>
         </div>
         <div>
