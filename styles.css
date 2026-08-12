@@ -1,25 +1,37 @@
-/* Emily Paige & Co. editorial magazine style
-   Palette pulled from the client's brand palette:
-   cream / off-white / dusty rose / burgundy / sage / chestnut / cocoa
-   Fonts loaded via Google Fonts in each page's <head>.
+/* Emily Paige & Co.
+   Final brand palette (2026-08 ERA Social brand guide):
+     Warm Cream    #EDE8DE
+     Dusty Terracotta #A36059
+     Deep Burgundy #6D2928
+     Muted Sage    #92987F
+     Burnt Umber   #612E17
+     Espresso      #4A2D22
+   Font pairing: PP Editorial New replaced by Fraunces (web-safe match with
+   the same high-contrast italic feel); Bookmania body replaced by Lora
+   (warm serif body); Brother Signature accent replaced by Homemade Apple
+   (handwritten signature script). Fonts loaded via Google Fonts per page.
 */
 
 :root {
-  --cream: #EFE7DA;
-  --cream-soft: #F5EFE5;
-  --cream-warm: #E7DED0;
-  --rose: #A2685F;
-  --rose-soft: #B78A82;
-  --burgundy: #6B2E30;
-  --burgundy-dark: #522023;
-  --sage: #8F9B84;
-  --chestnut: #5A2D18;
-  --cocoa: #3E2A23;
-  --cocoa-soft: #5A4A42;
-  --cocoa-line: rgba(62, 42, 35, 0.15);
+  /* Brand palette — official hex per brand guide */
+  --cream: #EDE8DE;
+  --cream-soft: #F4F0E7;
+  --cream-warm: #E4DCCE;
+  --rose: #A36059;         /* Dusty Terracotta */
+  --rose-soft: #BE8981;
+  --burgundy: #6D2928;     /* Deep Burgundy — the strongest brand color */
+  --burgundy-dark: #4F1D1C;
+  --sage: #92987F;         /* Muted Sage */
+  --chestnut: #612E17;     /* Burnt Umber */
+  --cocoa: #4A2D22;        /* Espresso — primary text */
+  --cocoa-soft: #6B4A3D;
+  --cocoa-line: rgba(74, 45, 34, 0.15);
 
+  /* Fraunces gets us the PP Editorial New feel; Lora replaces Bookmania. */
   --serif: 'Fraunces', 'Cormorant Garamond', Georgia, serif;
+  --serif-body: 'Lora', 'Fraunces', Georgia, serif;
   --sans: 'Inter', 'Helvetica Neue', system-ui, -apple-system, sans-serif;
+  --script: 'Homemade Apple', 'Caveat', 'Brush Script MT', cursive;
 
   --page-max: 1240px;
   --page-pad-x: clamp(20px, 5vw, 56px);
@@ -30,9 +42,9 @@
 html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
 body {
   margin: 0;
-  font-family: var(--sans);
+  font-family: var(--serif-body);
   font-size: 17px;
-  line-height: 1.65;
+  line-height: 1.7;
   color: var(--cocoa);
   background: var(--cream);
   -webkit-font-smoothing: antialiased;
@@ -52,15 +64,19 @@ a:focus-visible, button:focus-visible {
 h1, h2, h3, h4 {
   font-family: var(--serif);
   font-weight: 400;
-  color: var(--cocoa);
+  color: var(--burgundy);
   letter-spacing: -0.01em;
   line-height: 1.15;
   margin: 0 0 0.6em;
 }
-h1 { font-size: clamp(2.4rem, 5.5vw, 4.2rem); font-weight: 300; letter-spacing: -0.02em; }
-h2 { font-size: clamp(1.8rem, 3.6vw, 2.8rem); }
-h3 { font-size: clamp(1.3rem, 2.2vw, 1.6rem); }
+/* Big editorial headlines lean into Fraunces italic — echoes the
+   PP Editorial New feel the brand guide specifies. */
+h1 { font-size: clamp(2.4rem, 5.5vw, 4.4rem); font-weight: 300; font-style: italic; letter-spacing: -0.02em; }
+h2 { font-size: clamp(1.8rem, 3.6vw, 2.8rem); font-style: italic; font-weight: 400; }
+h3 { font-size: clamp(1.3rem, 2.2vw, 1.6rem); font-weight: 500; color: var(--cocoa); }
 h4 { font-size: 1.05rem; font-family: var(--sans); font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--rose); }
+/* Handwritten script accent — for eyebrow captions and personal moments. */
+.script { font-family: var(--script); font-weight: 400; color: var(--burgundy); }
 p { margin: 0 0 1.2em; max-width: 65ch; }
 p.lede { font-size: 1.2rem; color: var(--cocoa-soft); line-height: 1.55; }
 .eyebrow {
@@ -86,7 +102,7 @@ section { padding: clamp(60px, 10vw, 120px) 0; }
   position: sticky;
   top: 0;
   z-index: 40;
-  background: rgba(239, 231, 218, 0.94);
+  background: rgba(237, 232, 222, 0.94);
   backdrop-filter: saturate(1.1) blur(8px);
   -webkit-backdrop-filter: saturate(1.1) blur(8px);
   border-bottom: 1px solid var(--cocoa-line);
@@ -98,20 +114,41 @@ section { padding: clamp(60px, 10vw, 120px) 0; }
   padding: 18px 0;
   gap: 24px;
 }
+/* Header wordmark — official primary logo SVG.
+   Text fallback (.top/.sub spans) kept in the markup for accessibility
+   and for search crawlers; hidden visually when the image is available. */
 .wordmark {
+  display: inline-flex;
+  align-items: center;
+  line-height: 1;
+  color: var(--burgundy);
+  gap: 0;
+}
+.wordmark img {
+  display: block;
+  height: 60px;
+  width: auto;
+  max-width: 240px;
+}
+.wordmark .top,
+.wordmark .sub,
+.wordmark .amp { display: none; }
+
+/* When the SVG file is not available (offline preview, older browsers),
+   fall back to the text lockup. */
+.wordmark:not(:has(img)) {
   font-family: var(--serif);
   font-size: 1.35rem;
   font-weight: 300;
   letter-spacing: 0.02em;
   color: var(--cocoa);
-  line-height: 1;
-  display: flex;
   flex-direction: column;
   gap: 2px;
 }
-.wordmark .top { font-style: italic; }
-.wordmark .amp { color: var(--rose); font-style: italic; }
-.wordmark .sub {
+.wordmark:not(:has(img)) .top { display: inline; font-style: italic; }
+.wordmark:not(:has(img)) .amp { display: inline; color: var(--rose); font-style: italic; }
+.wordmark:not(:has(img)) .sub {
+  display: inline;
   font-family: var(--sans);
   font-size: 0.62rem;
   letter-spacing: 0.28em;
