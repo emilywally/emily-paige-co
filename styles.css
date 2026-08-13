@@ -27,8 +27,10 @@
   --cocoa-soft: #6B4A3D;
   --cocoa-line: rgba(74, 45, 34, 0.15);
 
-  /* Fraunces gets us the PP Editorial New feel; Lora replaces Bookmania. */
-  --serif: 'Fraunces', 'Cormorant Garamond', Georgia, serif;
+  /* PP Editorial New replacement chain: Playfair Display italic is
+     closer to the clean modern-classic feel than Fraunces italic
+     (which reads Victorian/medieval). Fraunces stays as a backup. */
+  --serif: 'Playfair Display', 'Fraunces', 'Cormorant Garamond', Georgia, serif;
   --serif-body: 'Lora', 'Fraunces', Georgia, serif;
   --sans: 'Inter', 'Helvetica Neue', system-ui, -apple-system, sans-serif;
   /* Signature script — Homemade Apple loads slowly; Caveat and Sacramento
