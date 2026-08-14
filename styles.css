@@ -31,7 +31,10 @@
      closer to the clean modern-classic feel than Fraunces italic
      (which reads Victorian/medieval). Fraunces stays as a backup. */
   --serif: 'Playfair Display', 'Fraunces', 'Cormorant Garamond', Georgia, serif;
-  --serif-body: 'Lora', 'Fraunces', Georgia, serif;
+  /* Bookmania is commercial (Mark Simonson Studio). Source Serif 4 is
+     the closest free-and-hosted substitute — same transitional feel,
+     similar proportions, warm italic. Falls back to Lora then serif. */
+  --serif-body: 'Source Serif 4', 'Source Serif Pro', 'Lora', Georgia, serif;
   --sans: 'Inter', 'Helvetica Neue', system-ui, -apple-system, sans-serif;
   /* Signature script — Homemade Apple loads slowly; Caveat and Sacramento
      are proven-fast Google Fonts fallbacks that keep the handwritten feel. */
@@ -1178,4 +1181,252 @@ section { padding: clamp(60px, 10vw, 120px) 0; }
 @media (max-width: 480px) {
   .wiw-heading { padding-left: 0; text-align: left; }
   .wiw-cottage { position: static; margin: 0 0 12px; width: 60px; }
+}
+
+/* ============================================================
+   EXTENDED BRAND PLACEMENT SYSTEM
+   Frame, pattern, and icons applied strategically across the
+   site. Kept as reusable classes so each moment stays consistent.
+   ============================================================ */
+
+/* Pattern behind a card, section, or block — subtle, no roar. */
+.pattern-bg {
+  background:
+    linear-gradient(rgba(237,232,222,0.72), rgba(237,232,222,0.72)),
+    url('/images/brand/pattern-burgundy.png') center/380px repeat,
+    var(--cream);
+}
+.pattern-bg-dark {
+  background:
+    url('/images/brand/pattern-burgundy.png') center/440px repeat,
+    var(--burgundy);
+  color: var(--cream);
+}
+
+/* Thin horizontal decorative divider strip using the brand pattern. */
+.pattern-divider {
+  background:
+    url('/images/brand/pattern-burgundy.png') center/240px repeat,
+    var(--burgundy);
+  height: 60px;
+  width: 100%;
+  border-top: 1px solid var(--chestnut);
+  border-bottom: 1px solid var(--chestnut);
+  opacity: 0.92;
+}
+
+/* Framed portrait — image sits INSIDE the oval frame, masked. */
+.framed-portrait {
+  position: relative;
+  width: 100%;
+  max-width: 460px;
+  aspect-ratio: 531 / 623; /* frame SVG native ratio */
+  margin: 0 auto;
+}
+.framed-portrait .portrait-crop {
+  position: absolute;
+  inset: 12% 15% 12% 15%;
+  overflow: hidden;
+  border-radius: 50%;
+  background: var(--cream);
+}
+.framed-portrait .portrait-crop img,
+.framed-portrait .portrait-crop video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.framed-portrait .frame-overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+}
+
+/* Small oval brand-stamp badge — for "seal of approval" moments. */
+.brand-stamp {
+  position: relative;
+  width: 160px;
+  height: 190px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  vertical-align: middle;
+}
+.brand-stamp .stamp-frame {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+.brand-stamp .stamp-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 0 24px;
+  line-height: 1;
+}
+.brand-stamp .stamp-big {
+  display: block;
+  font-family: var(--serif);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 2rem;
+  color: var(--burgundy);
+  line-height: 1;
+}
+.brand-stamp .stamp-small {
+  display: block;
+  margin-top: 6px;
+  font-family: var(--sans);
+  font-size: 0.6rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--cocoa);
+  font-weight: 600;
+}
+
+/* Framed CTA card — for guide download modules. Frame wraps the box. */
+.framed-guide {
+  position: relative;
+  padding: 48px 60px;
+  background: var(--cream-soft);
+  border: 1px solid rgba(109, 41, 40, 0.2);
+  border-radius: 4px;
+  text-align: center;
+  max-width: 620px;
+  margin: 48px auto;
+}
+.framed-guide::before,
+.framed-guide::after {
+  content: '';
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  background-image: url('/images/brand/frame-burgundy.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.6;
+}
+.framed-guide::before { top: -32px; left: -32px; transform: rotate(-6deg); }
+.framed-guide::after { bottom: -32px; right: -32px; transform: rotate(6deg); }
+.framed-guide h3 { color: var(--burgundy); font-style: italic; }
+
+/* Blog post ending flourish — tulips icon centered before byline. */
+.blog-flourish {
+  text-align: center;
+  margin: 64px auto 40px;
+  max-width: 300px;
+}
+.blog-flourish img { display: inline-block; width: 90px; height: auto; opacity: 0.85; }
+.blog-flourish::before,
+.blog-flourish::after { display: none; }
+.blog-flourish + .post-byline { margin-top: 12px; }
+
+/* Services page — key icons flanking each section h2. */
+.svc-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+}
+.svc-heading img { width: 44px; height: auto; opacity: 0.85; }
+.svc-heading img:first-child { transform: scaleX(-1); }
+.svc-heading h2 { margin: 0; }
+
+/* Cottage icon on neighborhood index cards. */
+.nb-index-card {
+  position: relative;
+}
+.nb-index-card::before {
+  content: '';
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 34px;
+  height: 34px;
+  background: url('/images/brand/house-cottage.png') center/contain no-repeat;
+  opacity: 0.6;
+}
+
+/* Contact page — champagne bottle decorative icon on hero. */
+.contact-champagne {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  width: 90px;
+  height: auto;
+  opacity: 0.8;
+  transform: rotate(15deg);
+  pointer-events: none;
+}
+@media (max-width: 720px) {
+  .contact-champagne { width: 60px; top: 20px; right: 20px; }
+}
+
+/* Footer signature — EP monogram or cottage next to compliance. */
+.footer-signature {
+  text-align: center;
+  margin: 48px 0 20px;
+  padding-top: 32px;
+  border-top: 1px solid var(--cocoa-line);
+}
+.footer-signature .script-line {
+  font-family: var(--script);
+  font-size: 1.6rem;
+  color: var(--burgundy);
+  line-height: 1;
+  display: block;
+}
+.footer-signature .caps-line {
+  font-family: var(--sans);
+  font-size: 0.68rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--cocoa-soft);
+  margin-top: 12px;
+  display: block;
+}
+
+/* 404 page — full-bleed brand moment. */
+.err-page {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 20px;
+  background:
+    linear-gradient(rgba(237,232,222,0.88), rgba(237,232,222,0.88)),
+    url('/images/brand/pattern-burgundy.png') center/380px repeat,
+    var(--cream);
+  text-align: center;
+}
+.err-inner { max-width: 620px; }
+.err-inner img.icon {
+  width: 120px;
+  height: auto;
+  margin: 0 auto 32px;
+  opacity: 0.9;
+}
+.err-inner .script-oops {
+  font-family: var(--script);
+  font-size: 2.4rem;
+  color: var(--burgundy);
+  line-height: 1;
+  margin-bottom: 20px;
+  display: block;
+}
+.err-inner h1 { font-size: clamp(2rem, 4vw, 3rem); }
+.err-inner .err-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 36px;
 }

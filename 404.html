@@ -7,7 +7,7 @@
 <meta name="robots" content="noindex">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;family=Fraunces:ital,opsz,wght@0,9..144,300..500;1,9..144,300..500&amp;family=Lora:ital,wght@0,400;0,500;0,600;1,400&amp;family=Inter:wght@400;500;600&amp;family=Homemade+Apple&amp;family=Sacramento&amp;family=Caveat&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;family=Source+Serif+4:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&amp;family=Fraunces:ital,opsz,wght@0,9..144,300..500;1,9..144,300..500&amp;family=Lora:ital,wght@0,400;0,500;0,600;1,400&amp;family=Inter:wght@400;500;600&amp;family=Homemade+Apple&amp;family=Sacramento&amp;family=Caveat&amp;display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/styles.css?v=brand2026">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <!-- Google tag (GA4) -->
@@ -39,17 +39,30 @@
     </ul>
   </div>
 </header>
-<main>
-<section>
-  <div class="wrap-narrow text-center" style="padding: 80px 0;">
-    <span class="eyebrow">404</span>
-    <h1>This page wandered off.</h1>
-    <p class="lede" style="margin: 24px auto 32px;">The page you&rsquo;re looking for isn&rsquo;t here. But everything else still is.</p>
-    <a href="/" class="btn btn-primary">Back to Home</a>
-  </div>
-</section>
+
+<main id="main">
+  <section class="brand-band" aria-hidden="true">
+    <div class="brand-band-inner">
+      <span class="script-line">Homes with meaning.</span>
+      <span class="caps-line">Emily Paige &amp; Co. &middot; Milwaukee, Wisconsin &middot; Real Estate</span>
+    </div>
+  </section>
+
+  <section class="err-page">
+    <div class="err-inner">
+      <img class="icon" src="/images/brand/champagne-bottle.png" alt="">
+      <span class="script-oops">Well, this is awkward.</span>
+      <h1>The page you were looking for is not here.</h1>
+      <p class="lede" style="margin: 24px auto 0;">Either the address has a typo, the page moved, or a link somewhere out on the internet is stale. Everything else is still where you would expect it.</p>
+      <div class="err-actions">
+        <a href="/" class="btn btn-primary">Back to Home</a>
+        <a href="/neighborhoods/" class="btn btn-ghost">Browse neighborhoods</a>
+        <a href="/contact.html" class="btn btn-ghost">Contact Emily</a>
+      </div>
+    </div>
+  </section>
 </main>
-<!-- Sticky mobile CTA bar -->
+
 <div class="mobile-cta-bar" role="navigation" aria-label="Quick contact">
   <a href="tel:+12623300037" aria-label="Call Emily" data-track="phone_click"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z"/></svg> Call</a>
   <a href="sms:+12623300037" aria-label="Text Emily" data-track="sms_click"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg> Text</a>
