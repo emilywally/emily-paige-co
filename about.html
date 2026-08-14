@@ -90,13 +90,24 @@
 
 <main id="main">
 
-  <!-- HERO: bio first, video in place of headshot on right -->
+  
+  <section class="brand-band" aria-hidden="true">
+    <div class="brand-band-inner">
+      <span class="script-line">Homes with meaning.</span>
+      <span class="caps-line">Emily Paige &amp; Co. &middot; Milwaukee, Wisconsin &middot; Real Estate</span>
+    </div>
+  </section>
+<!-- HERO: bio first, video in place of headshot on right -->
   <section style="padding-top: clamp(40px, 6vw, 80px);">
     <div class="wrap hero-grid">
       <div class="hero-copy">
-        <span class="eyebrow">About</span>
+        <span class="script-eyebrow">Meet</span>
         <h1>Emily Walczak</h1>
         <p class="lede">Founder, Emily Paige &amp; Co. &middot; Realtor at Keller Williams &middot; Milwaukee, Wisconsin.</p>
+        <div class="sage-callout" style="margin: 28px 0;">
+          <span class="label">The short version</span>
+          <p>Real estate through a lifestyle and design lens, a client experience that starts long before the first showing, and a genuine eye for what makes a house feel like the right home for the life you are actually living.</p>
+        </div>
         <div class="prose" style="margin-top: 32px;">
           <p>The reason I do this work has almost nothing to do with houses.</p>
           <p>I'm a third-generation entrepreneur, raised by a single mother who built her career caring for people at the end of their lives. It's a calling as much as a career, a job that never clocks out. Some of my most formative memories, Christmases, Thanksgivings, ordinary evenings in between, happened in those hallways. I grew up watching her show up, again and again, for people who needed her. It taught me more than a work ethic. It taught me what real pride in your work looks like, and what it means to care deeply about something bigger than yourself.</p>
@@ -106,12 +117,17 @@
           <p>When I'm not working, you'll find me in Bay View with my two fur babies, thrifting on slow mornings, or writing <em>mke diaries</em>, my little love letter to this city.</p>
           <p>If you're thinking about a move, I'd love to hear about it.</p>
         </div>
+
+        <div class="pull-quote">
+          "A home is never just about the house. It is about the life someone is building around it."
+          <cite>The Emily Paige &amp; Co. way</cite>
+        </div>
         <div class="hero-cta" style="margin-top: 40px;">
           <a href="/#start" class="btn btn-primary">Start with a Conversation</a>
           <a href="/contact.html" class="btn btn-ghost">Get in touch</a>
         </div>
       </div>
-      <div style="align-self: start;">
+      <div style="align-self: start; position: relative;">
         <div class="hero-image" style="border-radius: 6px; aspect-ratio: 9 / 12;">
           <video autoplay muted loop playsinline preload="none"
                  poster="/videos/emily-intro-poster.jpg"
@@ -120,8 +136,10 @@
             <source src="/videos/emily-intro.mp4" type="video/mp4">
             <img src="/images/emily-about.jpg" alt="Portrait of Emily Walczak, Milwaukee realtor">
           </video>
+          <img class="brand-seal" src="/images/brand/frame-burgundy.svg" alt="Emily Paige & Co. — Homes With Meaning" style="width: 180px;">
         </div>
-        <p style="text-align: center; margin-top: 12px; font-size: 0.82rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--rose); font-weight: 500;">Tap to unmute &middot; Meet Emily</p>
+        <p style="text-align: center; margin-top: 24px; font-family: var(--script); font-size: 1.4rem; color: var(--burgundy); line-height: 1;">Tap to unmute</p>
+        <p style="text-align: center; margin-top: 6px; font-size: 0.72rem; letter-spacing: 0.24em; text-transform: uppercase; color: var(--sage); font-weight: 600;">Meet Emily</p>
       </div>
     </div>
   </section>
