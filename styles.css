@@ -270,12 +270,19 @@ section { padding: clamp(60px, 10vw, 120px) 0; }
 }
 .wordmark img {
   display: block;
-  height: 84px;
+  height: 118px;
   width: auto;
-  max-width: 320px;
+  max-width: 420px;
 }
 @media (max-width: 720px) {
-  .wordmark img { height: 56px; max-width: 200px; }
+  .wordmark img { height: 74px; max-width: 260px; }
+}
+/* Footer logo — a little smaller than the header, kept on its own line. */
+.footer-wordmark { display: block; }
+.footer-wordmark img {
+  height: auto !important;
+  max-width: 260px !important;
+  width: 100%;
 }
 .wordmark .top,
 .wordmark .sub,
@@ -322,11 +329,13 @@ section { padding: clamp(60px, 10vw, 120px) 0; }
 .nav-links a:hover { color: var(--burgundy); }
 .nav-cta {
   display: none;
-  padding: 10px 20px;
+  padding: 10px 22px;
   border: 1px solid var(--burgundy);
   color: var(--burgundy);
   border-radius: 999px;
   font-size: 0.78rem !important;
+  white-space: nowrap;
+  text-align: center;
 }
 .nav-cta:hover { background: var(--burgundy); color: var(--cream) !important; }
 @media (min-width: 900px) { .nav-cta { display: inline-block; } }
