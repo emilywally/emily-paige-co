@@ -1402,17 +1402,18 @@ section { padding: clamp(60px, 10vw, 120px) 0; }
   justify-content: center;
   padding: 100px 20px;
   background:
-    linear-gradient(rgba(237,232,222,0.88), rgba(237,232,222,0.88)),
+    linear-gradient(rgba(237,232,222,0.96), rgba(237,232,222,0.96)),
     url('/images/brand/pattern-burgundy.png') center/380px repeat,
     var(--cream);
   text-align: center;
 }
 .err-inner { max-width: 620px; }
 .err-inner img.icon {
-  width: 120px;
+  width: 100px;
   height: auto;
   margin: 0 auto 32px;
-  opacity: 0.9;
+  opacity: 1;
+  filter: none;
 }
 .err-inner .script-oops {
   font-family: var(--script);
