@@ -11,8 +11,8 @@
 <meta property="og:image" content="https://emilypaigeandco.com/images/og-image.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..500;1,9..144,300..500&amp;family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/styles.css?v=20260803h">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;family=Source+Serif+4:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&amp;family=Fraunces:ital,opsz,wght@0,9..144,300..500;1,9..144,300..500&amp;family=Lora:ital,wght@0,400;0,500;0,600;1,400&amp;family=Inter:wght@400;500;600&amp;family=Homemade+Apple&amp;family=Sacramento&amp;family=Caveat&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css?v=conv1">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <!-- Google tag (GA4) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-4NYFP6ENRM"></script>
@@ -30,6 +30,7 @@
 <header class="site-header">
   <div class="wrap nav">
     <a href="/" class="wordmark" aria-label="Emily Paige and Co. home">
+      <img src="/images/brand/primary-logo-burgundy.svg" alt="Emily Paige & Co.">
       <span class="top">Emily Paige <span class="amp">&amp;</span> Co.</span>
       <span class="sub">Milwaukee Real Estate</span>
     </a>
@@ -51,22 +52,31 @@
   </div>
 </header>
 <main id="main">
+
+  <section class="brand-band" aria-hidden="true">
+    <div class="brand-band-inner">
+      <span class="script-line">Homes with meaning.</span>
+      <span class="caps-line">Emily Paige &amp; Co. &middot; Milwaukee, Wisconsin &middot; Real Estate</span>
+    </div>
+  </section>
 <section style="padding-top: clamp(40px, 6vw, 80px);">
   <div class="wrap">
     <div class="text-center" style="max-width: 60ch; margin: 0 auto;">
-      <span class="eyebrow">In Their Words</span>
+      <span class="script-eyebrow">Kind words</span>
       <h1>Reviews.</h1>
       <p class="lede" style="margin: 24px auto 0;">Verified reviews sourced from Realtor.com and Google. Real transactions, real people.</p>
-      <div class="rating-badge" style="align-self: center; margin: 40px auto 0; display: flex;">
-        <span class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-        <span class="score">5.0</span>
-        <span class="count">70+ Verified Reviews</span>
+      <div style="margin: 40px auto 20px; display: flex; justify-content: center;">
+        <div class="rating-badge" style="display: flex; margin: 0;">
+          <span class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+          <span class="score">5.0</span>
+          <span class="count">70+ Verified Reviews &middot; 100% Five-Star</span>
+        </div>
       </div>
       <div style="max-width: 780px; margin: 40px auto 0; display: grid; grid-template-columns: 1fr; gap: 16px;">
-        <a href="https://www.google.com/search?q=Emily+Walczak+realtor+Milwaukee+reviews" target="_blank" rel="noopener" style="display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 20px 28px; background: var(--cream-soft); border: 1px solid var(--cocoa-line); border-radius: 8px; color: var(--cocoa);">
+        <a href="https://www.google.com/search?q=Emily+Paige+%26+Co.+Wauwatosa" target="_blank" rel="noopener" data-track="gbp_view_click" style="display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 20px 28px; background: var(--cream-soft); border: 1px solid var(--cocoa-line); border-radius: 8px; color: var(--cocoa);">
           <div>
-            <div style="font-family: var(--serif); font-size: 1.15rem; margin-bottom: 4px;">Read the reviews on Google</div>
-            <div style="font-size: 0.85rem; color: var(--cocoa-soft);">Every review shown here is verified on either Realtor.com or Google.</div>
+            <div style="font-family: var(--serif); font-size: 1.15rem; margin-bottom: 4px;">Read all the reviews on Google</div>
+            <div style="font-size: 0.85rem; color: var(--cocoa-soft);">Emily Paige &amp; Co. on Google &middot; 5.0 stars &middot; verified reviews.</div>
           </div>
           <div style="color: var(--rose); font-size: 0.85rem; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 500; white-space: nowrap;">Open Google &rarr;</div>
         </a>
@@ -377,9 +387,8 @@
   <div class="wrap">
     <div class="footer-grid">
       <div class="footer-col">
-        <a href="/" class="wordmark" style="margin-bottom: 16px;">
-          <span class="top">Emily Paige <span class="amp">&amp;</span> Co.</span>
-          <span class="sub">Milwaukee Real Estate</span>
+        <a href="/" class="wordmark footer-wordmark" style="margin-bottom: 16px;" aria-label="Emily Paige and Co. home">
+          <img src="/images/brand/primary-logo-burgundy.svg" alt="Emily Paige & Co." style="max-width: 280px; width: 100%; height: auto;">
         </a>
         <p style="color: var(--cocoa-soft); font-size: 0.92rem; max-width: 34ch;">Residential real estate in greater Milwaukee. A team of Keller Williams.</p>
       </div>
@@ -403,6 +412,7 @@
           <li><a href="mailto:emilywalczak@kw.com" data-track="email_click">emilywalczak@kw.com</a></li>
           <li><a href="https://www.instagram.com/emilywalczak.realtor" target="_blank" rel="noopener">Instagram</a></li>
           <li><a href="https://www.tiktok.com/@emilywalczak.realtor" target="_blank" rel="noopener">TikTok</a></li>
+          <li><a href="https://www.google.com/search?q=Emily+Paige+%26+Co.+Wauwatosa" target="_blank" rel="noopener" data-track="gbp_view_click">Google &middot; 5.0 stars</a></li>
         </ul>
       </div>
     </div>
@@ -423,7 +433,11 @@
       </div>
     </div>
   </div>
-</footer>
+    <div class="footer-signature">
+      <span class="script-line">Homes with meaning.</span>
+      <span class="caps-line">Emily Paige &amp; Co. &middot; Milwaukee, Wisconsin</span>
+    </div>
+  </footer>
 <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
 <!-- Sticky mobile CTA bar -->
 <div class="mobile-cta-bar" role="navigation" aria-label="Quick contact">

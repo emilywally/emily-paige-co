@@ -13,8 +13,8 @@
 <meta property="og:url" content="https://emilypaigeandco.com/about.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..500;1,9..144,300..500&amp;family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/styles.css?v=20260803h">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;family=Source+Serif+4:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&amp;family=Fraunces:ital,opsz,wght@0,9..144,300..500;1,9..144,300..500&amp;family=Lora:ital,wght@0,400;0,500;0,600;1,400&amp;family=Inter:wght@400;500;600&amp;family=Homemade+Apple&amp;family=Sacramento&amp;family=Caveat&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css?v=conv1">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <script type="application/ld+json">
 {
@@ -66,6 +66,7 @@
 <header class="site-header">
   <div class="wrap nav">
     <a href="/" class="wordmark" aria-label="Emily Paige and Co. home">
+      <img src="/images/brand/primary-logo-burgundy.svg" alt="Emily Paige & Co.">
       <span class="top">Emily Paige <span class="amp">&amp;</span> Co.</span>
       <span class="sub">Milwaukee Real Estate</span>
     </a>
@@ -89,13 +90,24 @@
 
 <main id="main">
 
-  <!-- HERO: bio first, video in place of headshot on right -->
+  
+  <section class="brand-band" aria-hidden="true">
+    <div class="brand-band-inner">
+      <span class="script-line">Homes with meaning.</span>
+      <span class="caps-line">Emily Paige &amp; Co. &middot; Milwaukee, Wisconsin &middot; Real Estate</span>
+    </div>
+  </section>
+<!-- HERO: bio first, video in place of headshot on right -->
   <section style="padding-top: clamp(40px, 6vw, 80px);">
     <div class="wrap hero-grid">
       <div class="hero-copy">
-        <span class="eyebrow">About</span>
+        <span class="script-eyebrow">Meet</span>
         <h1>Emily Walczak</h1>
         <p class="lede">Founder, Emily Paige &amp; Co. &middot; Realtor at Keller Williams &middot; Milwaukee, Wisconsin.</p>
+        <div class="sage-callout" style="margin: 28px 0;">
+          <span class="label">The short version</span>
+          <p>Real estate through a lifestyle and design lens, a client experience that starts long before the first showing, and a genuine eye for what makes a house feel like the right home for the life you are actually living.</p>
+        </div>
         <div class="prose" style="margin-top: 32px;">
           <p>The reason I do this work has almost nothing to do with houses.</p>
           <p>I'm a third-generation entrepreneur, raised by a single mother who built her career caring for people at the end of their lives. It's a calling as much as a career, a job that never clocks out. Some of my most formative memories, Christmases, Thanksgivings, ordinary evenings in between, happened in those hallways. I grew up watching her show up, again and again, for people who needed her. It taught me more than a work ethic. It taught me what real pride in your work looks like, and what it means to care deeply about something bigger than yourself.</p>
@@ -105,22 +117,37 @@
           <p>When I'm not working, you'll find me in Bay View with my two fur babies, thrifting on slow mornings, or writing <em>mke diaries</em>, my little love letter to this city.</p>
           <p>If you're thinking about a move, I'd love to hear about it.</p>
         </div>
+
+        <div class="pull-quote">
+          "A home is never just about the house. It is about the life someone is building around it."
+          <cite>The Emily Paige &amp; Co. way</cite>
+        </div>
+
+        <div class="inline-quote">
+          <div class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote>"Emily is smart, diligent and most importantly cares about the needs of her clients whether buyers or sellers. She is not afraid to tell a client her opinion. Her experience is one of her greatest strengths as is her judgment and client care."</blockquote>
+          <cite>Luke C, Real Estate Attorney &middot; Milwaukee &middot; verified Google review</cite>
+          <div style="margin-top: 16px; font-size: 0.82rem;">
+            <a href="https://www.google.com/search?q=Emily+Paige+%26+Co.+Wauwatosa" target="_blank" rel="noopener" data-track="gbp_view_click" style="color: var(--burgundy); font-weight: 500;">See our Google reviews &rarr;</a>
+          </div>
+        </div>
         <div class="hero-cta" style="margin-top: 40px;">
           <a href="/#start" class="btn btn-primary">Start with a Conversation</a>
           <a href="/contact.html" class="btn btn-ghost">Get in touch</a>
         </div>
       </div>
       <div style="align-self: start;">
-        <div class="hero-image" style="border-radius: 6px; aspect-ratio: 9 / 12;">
+        <div class="about-video">
           <video autoplay muted loop playsinline preload="none"
                  poster="/videos/emily-intro-poster.jpg"
-                 style="width:100%; height:100%; object-fit: cover; display: block; cursor: pointer;"
+                 style="cursor: pointer; width: 100%; height: auto; border-radius: 6px; display: block;"
                  onclick="this.muted = !this.muted; if(!this.muted){this.controls=true; this.currentTime = 0; this.play();}">
             <source src="/videos/emily-intro.mp4" type="video/mp4">
             <img src="/images/emily-about.jpg" alt="Portrait of Emily Walczak, Milwaukee realtor">
           </video>
         </div>
-        <p style="text-align: center; margin-top: 12px; font-size: 0.82rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--rose); font-weight: 500;">Tap to unmute &middot; Meet Emily</p>
+        <p style="text-align: center; margin-top: 20px; font-family: var(--script); font-size: 1.4rem; color: var(--burgundy); line-height: 1;">Tap to unmute</p>
+        <p style="text-align: center; margin-top: 6px; font-size: 0.72rem; letter-spacing: 0.24em; text-transform: uppercase; color: var(--sage); font-weight: 600;">Meet Emily</p>
       </div>
     </div>
   </section>
@@ -178,9 +205,8 @@
   <div class="wrap">
     <div class="footer-grid">
       <div class="footer-col">
-        <a href="/" class="wordmark" style="margin-bottom: 16px;">
-          <span class="top">Emily Paige <span class="amp">&amp;</span> Co.</span>
-          <span class="sub">Milwaukee Real Estate</span>
+        <a href="/" class="wordmark footer-wordmark" style="margin-bottom: 16px;" aria-label="Emily Paige and Co. home">
+          <img src="/images/brand/primary-logo-burgundy.svg" alt="Emily Paige & Co." style="max-width: 280px; width: 100%; height: auto;">
         </a>
         <p style="color: var(--cocoa-soft); font-size: 0.92rem; max-width: 34ch;">Residential real estate in greater Milwaukee. A team of Keller Williams.</p>
       </div>
@@ -204,6 +230,7 @@
           <li><a href="mailto:emilywalczak@kw.com" data-track="email_click">emilywalczak@kw.com</a></li>
           <li><a href="https://www.instagram.com/emilywalczak.realtor" target="_blank" rel="noopener">Instagram</a></li>
           <li><a href="https://www.tiktok.com/@emilywalczak.realtor" target="_blank" rel="noopener">TikTok</a></li>
+          <li><a href="https://www.google.com/search?q=Emily+Paige+%26+Co.+Wauwatosa" target="_blank" rel="noopener" data-track="gbp_view_click">Google &middot; 5.0 stars</a></li>
         </ul>
       </div>
     </div>
@@ -224,7 +251,11 @@
       </div>
     </div>
   </div>
-</footer>
+    <div class="footer-signature">
+      <span class="script-line">Homes with meaning.</span>
+      <span class="caps-line">Emily Paige &amp; Co. &middot; Milwaukee, Wisconsin</span>
+    </div>
+  </footer>
 
 <div class="mobile-cta-bar" role="navigation" aria-label="Quick contact">
   <a href="tel:+12623300037" aria-label="Call Emily" data-track="phone_click"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z"/></svg> Call</a>
