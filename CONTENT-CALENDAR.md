@@ -2,7 +2,7 @@
 
 **Cadence rule:** 1 post per week, drafted Monday morning. (Set by Emily 2026-07-26, replacing the earlier 3x-weekly ramp; one well-researched post beats three thin ones.)
 
-**Posts published:** 4
+**Posts published:** 5
 **Current mode:** weekly
 
 ## Data rules (non-negotiable)
@@ -36,6 +36,7 @@ Mark ✅ when published, ⬜ when still in queue. Order flexible; pick what feel
 ### First-time buyer education
 - ✅ 2026-07-28, Mortgage pre-approval, in plain English *(Follow Up Boss: 7+ leads asked about pre-approval / lender confusion in the last 3 weeks; reframed as evergreen buyer guide per Emily)*
 - ✅ 2026-08-03, When to start looking for a house in Milwaukee *(Follow Up Boss: 4 different leads in the last 2 weeks asked variations of "am I starting too early" or "when should I start given my lease end date"; not covered anywhere in the Journal or FAQ)*
+- ✅ 2026-08-17, Buying and selling at the same time in Milwaukee *(Follow Up Boss: 5 different leads in the last 3 weeks asked how to sequence buying and selling; sub-questions included whether a contingent offer is viable and whether you must sell first to qualify. Confirmed by web research. Not covered in the Journal or FAQ.)*
 - ⬜ The Milwaukee first-time buyer roadmap: 8 steps from "curious" to "closed"
 - ⬜ How much house can I actually afford? (Milwaukee-specific)
 - ⬜ Wisconsin first-time buyer programs worth knowing about
