@@ -115,4 +115,32 @@
       });
     });
   });
+
+  // -------- Dynamic "Latest from the Journal" homepage feed --------
+  // Renders the N most recent blog posts from /blog/posts.json.
+  // To add a new post: add a post file AND prepend its entry to posts.json.
+  ready(function() {
+    var host = document.querySelector('[data-latest-posts]');
+    if (!host) return;
+    var limit = parseInt(host.getAttribute('data-latest-posts'), 10) || 2;
+    fetch('/blog/posts.json?v=' + Date.now())
+      .then(function(r) { return r.json(); })
+      .then(function(posts) {
+        posts.sort(function(a, b) { return b.date.localeCompare(a.date); });
+        var html = posts.slice(0, limit).map(function(p) {
+          var img = p.image ? '<a href="/blog/' + p.slug + '.html" class="blog-preview-hero"><img src="' + p.image + '" alt="" loading="lazy"></a>' : '';
+          return '<article class="blog-preview blog-preview-photo">'
+            + img
+            + '<div class="blog-preview-body">'
+            + '  <div class="post-meta">' + p.dateDisplay + ' &middot; ' + p.category + '</div>'
+            + '  <h3><a href="/blog/' + p.slug + '.html">' + p.title + '</a></h3>'
+            + '  <p>' + p.excerpt + '</p>'
+            + '  <a href="/blog/' + p.slug + '.html" class="btn-ghost">Read the post</a>'
+            + '</div>'
+            + '</article>';
+        }).join('');
+        host.innerHTML = html;
+      })
+      .catch(function() { /* leave fallback content in place */ });
+  });
 })();
