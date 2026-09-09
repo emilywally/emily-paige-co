@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Emily Paige & Co. | Milwaukee Real Estate</title>
+<meta name="description" content="You scanned the sign. Here is how to reach Emily about this home.">
+<meta name="robots" content="noindex, follow">
+<link rel="canonical" href="https://emilypaigeandco.com/l1">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Emily Paige & Co. | Milwaukee Real Estate">
+<meta property="og:description" content="You scanned the sign. Here is how to reach Emily about this home.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;family=Source+Serif+4:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&amp;family=Inter:wght@400;500;600&amp;family=Sacramento&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css?v=conv3">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4NYFP6ENRM"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-4NYFP6ENRM',{anonymize_ip:true});</script>
+<script defer src="/analytics.js"></script>
+<style>
+  /* Sign landing pages: built for a phone, held at the curb, in a hurry. */
+  .sign-hero{position:relative;background:var(--burgundy);overflow:hidden}
+  .sign-hero img{width:100%;height:clamp(240px,46vw,460px);object-fit:cover;display:block}
+  .sign-badge{display:inline-block;background:var(--burgundy);color:var(--cream-soft);
+    font-family:var(--sans);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;
+    padding:7px 14px;border-radius:100px;margin-bottom:14px}
+  .sign-address{font-family:var(--serif);font-size:clamp(1.8rem,5.5vw,2.9rem);line-height:1.15;
+    margin:0 0 6px;color:var(--cocoa)}
+  .sign-city{font-family:var(--sans);font-size:1rem;color:var(--cocoa-soft);margin:0}
+  /* 2x2 on a phone, 4 across once there is room. auto-fit left an orphan
+     empty cell at 390px wide, which read as a broken tile. */
+  .sign-facts{display:grid;grid-template-columns:repeat(2,1fr);gap:2px;
+    background:var(--cocoa-line);border:1px solid var(--cocoa-line);border-radius:8px;
+    overflow:hidden;margin:28px 0}
+  @media(min-width:560px){.sign-facts{grid-template-columns:repeat(4,1fr)}}
+  .sign-fact{background:var(--cream-soft);padding:18px 10px;text-align:center}
+  .sign-fact strong{display:block;font-family:var(--serif);font-size:1.45rem;color:var(--cocoa);line-height:1.2}
+  .sign-fact span{display:block;font-family:var(--sans);font-size:.7rem;letter-spacing:.12em;
+    text-transform:uppercase;color:var(--cocoa-soft);margin-top:5px}
+  .sign-actions{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:24px 0 8px}
+  .sign-actions .btn{width:100%;text-align:center;margin:0}
+  .sign-gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px;margin-top:28px}
+  .sign-gallery img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:6px;display:block}
+  /* Thumb-reach bar. Everything above can scroll away; this cannot. */
+  .sign-bar{position:fixed;left:0;right:0;bottom:0;z-index:60;display:flex;gap:10px;
+    padding:10px 14px calc(10px + env(safe-area-inset-bottom));
+    background:rgba(244,240,231,.97);border-top:1px solid var(--cocoa-line);
+    backdrop-filter:saturate(1.2) blur(8px)}
+  .sign-bar a{flex:1;text-align:center;padding:14px 10px;border-radius:6px;font-family:var(--sans);
+    font-size:.95rem;font-weight:600;text-decoration:none;letter-spacing:.02em}
+  .sign-bar .txt{background:var(--burgundy);color:var(--cream-soft)}
+  .sign-bar .cal{background:transparent;color:var(--burgundy);border:1.5px solid var(--burgundy)}
+  body{padding-bottom:86px}
+  @media(min-width:820px){.sign-bar{display:none}body{padding-bottom:0}}
+</style>
+</head>
+<body>
+<a href="#main" class="sr-only">Skip to content</a>
+<header class="site-header">
+  <div class="wrap nav">
+    <a href="/" class="wordmark" aria-label="Emily Paige and Co. home">
+      <img src="/images/brand/primary-logo-burgundy.svg" alt="Emily Paige &amp; Co.">
+      <span class="top">Emily Paige <span class="amp">&amp;</span> Co.</span>
+      <span class="sub">Milwaukee Real Estate</span>
+    </a>
+    <button class="mobile-toggle" aria-label="Open menu" aria-expanded="false" onclick="var l=document.getElementById('nav-links');l.classList.toggle('open');this.setAttribute('aria-expanded',l.classList.contains('open'))">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/listings.html">Listings</a></li>
+      <li><a href="/reviews.html">Reviews</a></li>
+      <li><a href="/contact.html">Contact</a></li>
+    </ul>
+  </div>
+</header>
+<main id="main">
+  <section style="padding-top:clamp(36px,6vw,72px);">
+    <div class="wrap-narrow">
+      <div class="text-center" style="max-width:56ch;margin:0 auto;">
+        <span class="sign-badge">You scanned the sign</span>
+        <h1 class="sign-address">Let's talk about this home.</h1>
+        <p class="lede" style="margin:18px auto 0;">Details for this one are being updated right now. In the meantime, the fastest way to get everything, including price, room sizes, and when you can walk through it, is to text me. I answer myself.</p>
+        <div class="sign-actions" style="max-width:440px;margin-left:auto;margin-right:auto;">
+          <a class="btn btn-primary" href="sms:+12623300037?&body=Hi%20Emily%21%20I%20scanned%20the%20QR%20code%20on%20your%20sign%20and%20I%27d%20love%20to%20know%20more%20about%20this%20home." data-track="sign_sms_click">Text me</a>
+          <a class="btn btn-ghost" href="tel:+12623300037" data-track="sign_call_click">Call me</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="background:var(--cream-warm);border-top:1px solid var(--cocoa-line);border-bottom:1px solid var(--cocoa-line);">
+    <div class="wrap-narrow">
+      <div class="section-title">
+        <span class="eyebrow">Or Leave Your Number</span>
+        <h2>I'll send you the details.</h2>
+        <p>Takes ten seconds. I'll text you back with everything on this home.</p>
+      </div>
+      <form class="contact-form" action="https://formsubmit.co/emilywalczak@kw.com" method="POST" style="background:var(--cream-soft);max-width:560px;margin:0 auto;">
+      <input type="hidden" name="_subject" value="Yard sign scan (Sign 1) from emilypaigeandco.com">
+      <input type="hidden" name="_captcha" value="true">
+      <input type="hidden" name="_next" value="https://emilypaigeandco.com/l1?sent=1">
+      <input type="hidden" name="Came from" value="Sign 1 yard sign QR code">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;">
+        <div>
+          <label for="f-name">Your Name</label>
+          <input type="text" id="f-name" name="name" required autocomplete="name" style="margin-bottom:0;">
+        </div>
+        <div>
+          <label for="f-phone">Phone</label>
+          <input type="tel" id="f-phone" name="phone" required autocomplete="tel" style="margin-bottom:0;">
+        </div>
+      </div>
+      <div style="margin-top:20px;">
+        <label for="f-email">Email <span style="text-transform:none;letter-spacing:0;color:var(--cocoa-soft);font-weight:400;">(optional)</span></label>
+        <input type="email" id="f-email" name="email" autocomplete="email">
+      </div>
+      <label for="f-msg">Anything you want to know?</label>
+      <textarea id="f-msg" name="message" style="min-height:110px;" placeholder="Weekends are easiest, or any evening after 5."></textarea>
+      <div style="text-align:center;margin-top:8px;">
+        <button type="submit" class="btn btn-primary">Send it to Emily</button>
+      </div>
+      <p style="text-align:center;font-size:.86rem;color:var(--cocoa-soft);margin:18px 0 0;">
+        No spam, no drip campaign, no army of callers. Just me.
+      </p>
+    </form>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap-narrow text-center">
+      <h2>Want to see what else is out there?</h2>
+      <p style="color:var(--cocoa-soft);max-width:48ch;margin:14px auto 26px;">Every active home in greater Milwaukee, updated live through the MLS.</p>
+      <a href="/listings.html" class="btn btn-primary" data-track="sign_browse_click">Browse Milwaukee listings &rarr;</a>
+    </div>
+  </section>
+<div class="sign-bar">
+  <a class="txt" href="sms:+12623300037?&body=Hi%20Emily%21%20I%20scanned%20the%20QR%20code%20on%20your%20sign%20and%20I%27d%20love%20to%20know%20more%20about%20this%20home." data-track="sign_sms_click">Text me about this home</a>
+  <a class="cal" href="tel:+12623300037" data-track="sign_call_click">Call</a>
+</div></main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <a href="/" class="wordmark footer-wordmark" style="margin-bottom:16px;" aria-label="Emily Paige and Co. home">
+          <img src="/images/brand/primary-logo-burgundy.svg" alt="Emily Paige &amp; Co." style="max-width:280px;width:100%;height:auto;">
+        </a>
+        <p style="color:var(--cocoa-soft);font-size:.92rem;max-width:34ch;">Residential real estate in greater Milwaukee. A team of Keller Williams.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Site</h4>
+        <ul>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/listings.html">Listings</a></li>
+          <li><a href="/reviews.html">Reviews</a></li>
+          <li><a href="/faq.html">FAQ</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+12623300037" data-track="phone_click">262-330-0037</a></li>
+          <li><a href="mailto:emilywalczak@kw.com" data-track="email_click">emilywalczak@kw.com</a></li>
+          <li><a href="https://www.instagram.com/emilywalczak.realtor" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.tiktok.com/@emilywalczak.realtor" target="_blank" rel="noopener">TikTok</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-compliance">
+      <div class="compliance-text">
+        &copy; <span id="year">2026</span> Emily Paige &amp; Co. &middot; Emily Walczak, Licensed Real Estate Agent in the State of Wisconsin &middot; License #95426-94 &middot; Keller Williams
+      </div>
+    </div>
+  </div>
+  <div class="footer-signature">
+    <span class="script-line">Homes with meaning.</span>
+    <span class="caps-line">Emily Paige &amp; Co. &middot; Milwaukee, Wisconsin</span>
+  </div>
+</footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>

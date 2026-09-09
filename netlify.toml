@@ -51,6 +51,24 @@
   status = 301
   force = true
 
+# Sign QR landing pages. These three URLs are printed on physical yard signs
+# and can NEVER change. Explicit rewrites so /l1 serves l1.html regardless of
+# Netlify's pretty-URL setting. Must stay ABOVE the 404 rule.
+[[redirects]]
+  from = "/l1"
+  to = "/l1.html"
+  status = 200
+
+[[redirects]]
+  from = "/l2"
+  to = "/l2.html"
+  status = 200
+
+[[redirects]]
+  from = "/l3"
+  to = "/l3.html"
+  status = 200
+
 # Ensure 404.html is used
 [[redirects]]
   from = "/*"
