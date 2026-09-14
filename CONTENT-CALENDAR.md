@@ -2,7 +2,7 @@
 
 **Cadence rule:** 1 post per week, drafted Monday morning. (Set by Emily 2026-07-26, replacing the earlier 3x-weekly ramp; one well-researched post beats three thin ones.)
 
-**Posts published:** 6
+**Posts published:** 7
 **Current mode:** weekly
 
 ## Data rules (non-negotiable)
@@ -39,6 +39,7 @@ Mark ✅ when published, ⬜ when still in queue. Order flexible; pick what feel
 - ✅ 2026-08-17, Buying and selling at the same time in Milwaukee *(Follow Up Boss: 5 different leads in the last 3 weeks asked how to sequence buying and selling; sub-questions included whether a contingent offer is viable and whether you must sell first to qualify. Confirmed by web research. Not covered in the Journal or FAQ.)*
 - ⬜ The Milwaukee first-time buyer roadmap: 8 steps from "curious" to "closed"
 - ✅ 2026-08-17, How much cash do you actually need to buy a house in Milwaukee? *(Follow Up Boss: 4 leads asked outright in the last 3 weeks plus ~4 more implied it on intake forms; people collapse down payment and closing costs into one number, and nobody knew repeat buyers face a higher conventional minimum. FAQ touches closing costs briefly; this goes deeper. Second post of the day.)*
+- ✅ 2026-09-14, How much over asking should you offer in Milwaukee? *(Follow Up Boss: top theme in a 650-note sweep, 2026-08-22 to 2026-09-14. 7 mentions of "how far over asking" and escalation clauses, plus 2 on appraisal gap. Confirmed by web research. Emily added the buyer-side comparables methodology, corrected the escalation framing, reframed the appraisal risk, and corrected who owes a shortfall. Same commit refreshed the stale 14-day DOM figure to 19 in faq.html and services/selling.html. Ran long at ~1,410 words by Emily's call.)*
 - ⬜ How much house can I actually afford? (Milwaukee-specific)
 - ⬜ Wisconsin first-time buyer programs worth knowing about
 - ⬜ Inspection day: what your inspector should be looking for
