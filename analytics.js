@@ -53,7 +53,7 @@
   // -------- Exit intent modal (desktop only, once per visitor) --------
   ready(function() {
     if (window.innerWidth < 720) return;                      // skip on mobile
-    try { if (localStorage.getItem('epco_exit_seen')) return; } catch (e) {}
+    try { if (localStorage.getItem('epco_exit_seen_v2')) return; } catch (e) {}
     var shown = false;
     function makeModal() {
       var wrap = document.createElement('div');
@@ -81,12 +81,41 @@
         gtag('event', 'exit_intent_shown', { event_category: 'engagement' });
       }
     }
+    // Arming guards. Without these the modal fires on page load: a visitor who
+    // arrives by typing the address or clicking a bookmark already has the cursor
+    // parked at the top of the screen, so their first move down into the page
+    // produces a mouseout at the top edge that is indistinguishable from leaving.
+    // Require time on page, a cursor that has genuinely been inside the page, and
+    // some scrolling before a top-edge exit counts as an exit.
+    var ARM_DELAY_MS = 15000;   // how long before we start watching at all
+    var CURSOR_INSIDE_Y = 120;  // px below the top edge the cursor must reach once
+    var SCROLL_MIN_PX = 300;    // how far down the page they must have gone
+
+    var timeOk = false, cursorOk = false, scrollOk = false;
+
+    setTimeout(function() { timeOk = true; }, ARM_DELAY_MS);
+
+    document.addEventListener('mousemove', function onMove(e) {
+      if (e.clientY > CURSOR_INSIDE_Y) {
+        cursorOk = true;
+        document.removeEventListener('mousemove', onMove);
+      }
+    }, { passive: true });
+
+    window.addEventListener('scroll', function onScrollArm() {
+      if (window.scrollY > SCROLL_MIN_PX) {
+        scrollOk = true;
+        window.removeEventListener('scroll', onScrollArm);
+      }
+    }, { passive: true });
+
     document.addEventListener('mouseout', function(e) {
       if (shown) return;
+      if (!timeOk || !cursorOk || !scrollOk) return;          // not armed yet
       if (e.clientY > 0) return;                              // only fire on top edge
       if (e.relatedTarget) return;
       shown = true;
-      try { localStorage.setItem('epco_exit_seen', '1'); } catch (err) {}
+      try { localStorage.setItem('epco_exit_seen_v2', '1'); } catch (err) {}
       makeModal();
     });
   });
