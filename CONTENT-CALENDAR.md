@@ -2,7 +2,7 @@
 
 **Cadence rule:** 1 post per week, drafted Monday morning. (Set by Emily 2026-07-26, replacing the earlier 3x-weekly ramp; one well-researched post beats three thin ones.)
 
-**Posts published:** 7
+**Posts published:** 8
 **Current mode:** weekly
 
 ## Data rules (non-negotiable)
@@ -44,6 +44,7 @@ Mark ✅ when published, ⬜ when still in queue. Order flexible; pick what feel
 - ⬜ Wisconsin first-time buyer programs worth knowing about
 - ⬜ Inspection day: what your inspector should be looking for
 - ⬜ Earnest money, appraisal gaps, and other terms nobody explains
+- ✅ 2026-09-21, Why is this house still on the market? *(Follow Up Boss: theme ranked #4 in an 800-note sweep, 2026-08-27 to 2026-09-21, with 8 mentions of reading a listing that has been sitting: days on market, price drops, and whether it is fair to offer under asking. Confirmed by web research, where "how much below asking on a 30+ day listing" is high-volume. Not covered in the Journal or FAQ, and deliberate counter-programming to the 2026-09-14 over-asking post. First post to use the GMAR August 2026 report, released 2026-09-14. Ran long at ~1,100 words, flagged for Emily's call.)*
 - ⬜ Should you waive your inspection contingency in Milwaukee right now?
 
 ### Seller playbook
