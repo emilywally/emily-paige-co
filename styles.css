@@ -834,8 +834,11 @@ section { padding: clamp(60px, 10vw, 120px) 0; }
   border: 1px solid rgba(239, 231, 218, 0.25);
   border-radius: 6px;
   min-height: 44px;
+  white-space: nowrap;
 }
 .mobile-cta-bar a.primary {
+  /* "Start Here →" needs more room than "Call" or "Text" to stay on one line. */
+  flex: 1.7;
   background: var(--burgundy);
   border-color: var(--burgundy);
 }
