@@ -42,6 +42,34 @@
   status = 301
   force = true
 
+# Google was indexing both the extensionless and .html address for these
+# pages as separate URLs, splitting search credit between them. The
+# canonical tag and sitemap use the .html address, so send the extensionless
+# one there with a permanent redirect. Must stay ABOVE the 404 rule.
+[[redirects]]
+  from = "/about"
+  to = "/about.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/reviews"
+  to = "/reviews.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/listings"
+  to = "/listings.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/faq"
+  to = "/faq.html"
+  status = 301
+  force = true
+
 # Serve favicon.svg when browsers request /favicon.ico.
 # Every browser/scraper requests /favicon.ico by default even when we
 # link /favicon.svg. This turns 46+ weekly 404s into cached 200s.
