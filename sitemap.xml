@@ -26,9 +26,15 @@
   </url>
   <url>
     <loc>https://emilypaigeandco.com/blog/</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://emilypaigeandco.com/blog/shorewood-real-estate-market.html</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://emilypaigeandco.com/blog/house-still-on-the-market-milwaukee.html</loc>
