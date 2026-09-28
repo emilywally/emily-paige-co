@@ -22,6 +22,7 @@ Target register, per ERA: **warm, confident, conversational, personable, assured
 - Sign off as an invitation, not a call to action. "I'd love to hear about it."
 - **No em dashes.** Not the character, not the `&mdash;` entity. Rewrite the sentence instead: use a comma, a colon, a period, or parentheses. This is Emily's standing preference and applies to every post, headline, excerpt, and meta description.
 - No emojis. No exclamation points.
+- **Never use "actually".** Emily: it is a dead giveaway for AI. Cut it rather than swapping in "really" or "truly", which read the same way. Applies to titles, headings, excerpts, meta descriptions and GBP posts.
 
 ## Data rules (non-negotiable)
 
