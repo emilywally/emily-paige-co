@@ -1,5 +1,14 @@
 [
   {
+    "slug": "seller-closing-costs-wisconsin",
+    "title": "What are seller closing costs in Wisconsin?",
+    "date": "2026-10-01",
+    "dateDisplay": "October 1, 2026",
+    "category": "Field notes",
+    "excerpt": "A state transfer fee, commission, title work, your payoff and a few prorations. Most of it is predictable before you list, and one line is entirely up to you.",
+    "image": "/images/neighborhoods/east-side.jpg"
+  },
+  {
     "slug": "flat-fee-brokerage-milwaukee",
     "title": "Should you use a flat fee brokerage to sell your Milwaukee home?",
     "date": "2026-09-30",
@@ -18,6 +27,15 @@
     "image": "/images/neighborhoods/whitefish-bay.jpg"
   },
   {
+    "slug": "shorewood-real-estate-market",
+    "title": "What is the Shorewood, Wisconsin real estate market like right now?",
+    "date": "2026-09-24",
+    "dateDisplay": "September 24, 2026",
+    "category": "Market notes",
+    "excerpt": "Priced high, moving fast, and thin on inventory. What Shorewood homes are actually selling for, why prices run high, and what it means for buyers and sellers this fall.",
+    "image": "/images/neighborhoods/shorewood-2.jpg"
+  },
+  {
     "slug": "house-still-on-the-market-milwaukee",
     "title": "Why is this house still on the market?",
     "date": "2026-09-21",
@@ -28,7 +46,7 @@
   },
   {
     "slug": "how-much-over-asking-milwaukee",
-    "title": "How much over asking should you offer in Milwaukee?",
+    "title": "How much over asking should I offer in Milwaukee?",
     "date": "2026-09-14",
     "dateDisplay": "September 14, 2026",
     "category": "Field notes",
@@ -37,7 +55,7 @@
   },
   {
     "slug": "when-to-start-looking-for-a-house-milwaukee",
-    "title": "When should you start looking for a house?",
+    "title": "When should I start looking for a house in Milwaukee?",
     "date": "2026-08-05",
     "dateDisplay": "August 5, 2026",
     "category": "Field notes",
@@ -55,7 +73,7 @@
   },
   {
     "slug": "mortgage-pre-approval-milwaukee",
-    "title": "Mortgage pre-approval, in plain English.",
+    "title": "How does mortgage pre-approval work in Wisconsin?",
     "date": "2026-07-26",
     "dateDisplay": "July 26, 2026",
     "category": "Field notes",
@@ -64,7 +82,7 @@
   },
   {
     "slug": "welcome",
-    "title": "A new home for Emily Paige & Co.",
+    "title": "Emily Walczak, Realtor Serving Metro Milwaukee",
     "date": "2026-07-24",
     "dateDisplay": "July 24, 2026",
     "category": "Field notes",
