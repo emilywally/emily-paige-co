@@ -65,7 +65,9 @@
     text-align:center;margin:26px 16px 0}
   .sign-story{display:flex;flex-direction:column;gap:30px;margin-top:34px}
   .sign-story figure{margin:0}
-  .sign-story img{width:100%;border-radius:6px;display:block}
+  .sign-story img{width:100%;border-radius:0;display:block}
+  @media(max-width:819px){.sign-story img{width:100vw;max-width:100vw;margin-left:calc(50% - 50vw)}
+    .sign-story figcaption{margin:10px 16px 0}}
   .sign-story figcaption{font-family:'Bookmania',var(--serif-body);font-size:.98rem;color:var(--cocoa-soft);margin:10px 4px 0}
 </style>
 </head>
