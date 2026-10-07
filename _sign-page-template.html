@@ -53,6 +53,20 @@
   .sign-bar .cal{background:transparent;color:var(--burgundy);border:1.5px solid var(--burgundy)}
   body{padding-bottom:86px}
   @media(min-width:820px){.sign-bar{display:none}body{padding-bottom:0}}
+
+  @font-face{font-family:'PP Editorial New';src:url('/fonts/PPEditorialNew-Ultralight.otf') format('opentype');font-weight:200;font-display:swap}
+  @font-face{font-family:'Bookmania';src:url('/fonts/Bookmania-Regular.ttf') format('truetype');font-weight:400;font-display:swap}
+  .sign-address{font-family:'PP Editorial New',var(--serif);font-weight:200;color:var(--burgundy);font-size:clamp(2.2rem,6.5vw,3.5rem)}
+  .sign-fact strong{font-family:'PP Editorial New',var(--serif);font-weight:200}
+  .sign-desc p{font-family:'Bookmania',var(--serif-body)}
+  .hero-kicker{font-family:var(--sans);font-size:.78rem;letter-spacing:.24em;text-transform:uppercase;
+    color:var(--cream-soft);text-align:center;margin:0 16px 26px}
+  .hero-note{font-family:'Bookmania',var(--serif-body);font-size:1.02rem;color:var(--cream-soft);
+    text-align:center;margin:26px 16px 0}
+  .sign-story{display:flex;flex-direction:column;gap:30px;margin-top:34px}
+  .sign-story figure{margin:0}
+  .sign-story img{width:100%;border-radius:6px;display:block}
+  .sign-story figcaption{font-family:'Bookmania',var(--serif-body);font-size:.98rem;color:var(--cocoa-soft);margin:10px 4px 0}
 </style>
 </head>
 <body>
@@ -78,7 +92,10 @@
 </header>
 <main id="main">
   <section class="sign-hero">
+    <p class="hero-kicker">{{HERO_KICKER}}</p>
     <img src="{{HERO_IMAGE}}" alt="{{ADDRESS}}">
+    <p class="hero-note">{{OPEN_HOUSE}}</p>
+    <!-- No open house? Delete the hero-note line above. -->
   </section>
 
   <section style="padding-top:clamp(28px,4vw,44px);">
@@ -99,17 +116,18 @@
         <a class="btn btn-ghost" href="tel:+12623300037" data-track="sign_call_click">Call</a>
       </div>
 
-      <!-- OPEN HOUSE: delete this whole block if there isn't one -->
-      <p style="background:var(--cream-soft);border-left:3px solid var(--burgundy);padding:14px 18px;margin-top:26px;font-family:var(--sans);font-size:.95rem;">
-        <strong>Open house:</strong> {{OPEN_HOUSE}}
-      </p>
-
-      <div style="margin-top:32px;font-family:var(--serif-body);font-size:1.08rem;line-height:1.75;color:var(--cocoa);">
+      <div class="sign-desc" style="margin-top:32px;font-size:1.08rem;line-height:1.75;color:var(--cocoa);">
         {{DESCRIPTION}}
       </div>
 
-      <div class="sign-gallery">
+      <div class="sign-story">
         {{GALLERY}}
+        <!-- Each gallery item:
+        <figure>
+          <img src="/images/listings/SLUG/FILE.jpg" alt="what the photo shows" loading="lazy">
+          <figcaption>One warm line about this photo</figcaption>
+        </figure>
+        -->
       </div>
     </div>
   </section>

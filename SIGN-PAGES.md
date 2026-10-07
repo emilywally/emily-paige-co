@@ -19,8 +19,9 @@ Each page is always in one of two states.
 **Waiting** is the default and what ships today. It says the details are being updated,
 gives a one-tap text link, and has a short form. Nobody who scans ever hits a dead end.
 
-**Active** is a real listing page: hero photo, price, beds, baths, square feet, description,
-photo gallery, open house, and a showing request form. The blank version lives in
+**Active** is a real listing page: hero photo with text on the burgundy bands around it, price, beds, baths,
+square feet, description, a photo story (each photo with a one-line caption), and a showing request form.
+Headings set in PP Editorial New and body in Bookmania, the brand fonts, from /fonts/. The blank version lives in
 `_sign-page-template.html`.
 
 ## To put a listing on a sign
@@ -37,9 +38,10 @@ Copy `_sign-page-template.html` over the sign's file and fill in the placeholder
 | `{{PRICE}}` | `$385,000` |
 | `{{BEDS}}` `{{BATHS}}` `{{SQFT}}` | `3`, `2`, `1,640` |
 | `{{HERO_IMAGE}}` | `/images/listings/l1/hero.jpg` |
-| `{{GALLERY}}` | repeated `<img src="..." alt="...">` tags |
+| `{{GALLERY}}` | repeated `<figure><img ...><figcaption>caption</figcaption></figure>` blocks, photo then a one-line caption |
 | `{{DESCRIPTION}}` | one or two `<p>` paragraphs |
-| `{{OPEN_HOUSE}}` | `Sunday 11am to 1pm` (delete the block if there isn't one) |
+| `{{OPEN_HOUSE}}` | `Open house Sunday 11 am to 1 pm` (renders on the burgundy band under the hero; delete the hero-note line if there isn't one) |
+| `{{HERO_KICKER}}` | `Just Listed in Bay View` (renders on the burgundy band above the hero) |
 | `{{SMS_LINK}}` | `sms:+12623300037?&body=Hi%20Emily!%20I'm%20looking%20at%20ADDRESS...` |
 
 Listing photos go in `images/listings/l1/`, `l2/`, `l3/`.

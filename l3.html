@@ -53,6 +53,20 @@
   .sign-bar .cal{background:transparent;color:var(--burgundy);border:1.5px solid var(--burgundy)}
   body{padding-bottom:86px}
   @media(min-width:820px){.sign-bar{display:none}body{padding-bottom:0}}
+
+  @font-face{font-family:'PP Editorial New';src:url('/fonts/PPEditorialNew-Ultralight.otf') format('opentype');font-weight:200;font-display:swap}
+  @font-face{font-family:'Bookmania';src:url('/fonts/Bookmania-Regular.ttf') format('truetype');font-weight:400;font-display:swap}
+  .sign-address{font-family:'PP Editorial New',var(--serif);font-weight:200;color:var(--burgundy);font-size:clamp(2.2rem,6.5vw,3.5rem)}
+  .sign-fact strong{font-family:'PP Editorial New',var(--serif);font-weight:200}
+  .sign-desc p{font-family:'Bookmania',var(--serif-body)}
+  .hero-kicker{font-family:var(--sans);font-size:.78rem;letter-spacing:.24em;text-transform:uppercase;
+    color:var(--cream-soft);text-align:center;margin:0 16px 26px}
+  .hero-note{font-family:'Bookmania',var(--serif-body);font-size:1.02rem;color:var(--cream-soft);
+    text-align:center;margin:26px 16px 0}
+  .sign-story{display:flex;flex-direction:column;gap:30px;margin-top:34px}
+  .sign-story figure{margin:0}
+  .sign-story img{width:100%;border-radius:6px;display:block}
+  .sign-story figcaption{font-family:'Bookmania',var(--serif-body);font-size:.98rem;color:var(--cocoa-soft);margin:10px 4px 0}
 </style>
 </head>
 <body>
@@ -78,7 +92,9 @@
 </header>
 <main id="main">
   <section class="sign-hero">
+    <p class="hero-kicker">Just Listed in Cooper Park</p>
     <img src="/images/listings/l3/DSC00755.jpg" alt="2973 N 79th St">
+    <p class="hero-note">Open house Thursday 10/8 from 4:30 to 6:30 pm, and Saturday 10/10 from 11 am to 1 pm</p>
   </section>
 
   <section style="padding-top:clamp(28px,4vw,44px);">
@@ -99,24 +115,40 @@
         <a class="btn btn-ghost" href="tel:+12623300037" data-track="sign_call_click">Call</a>
       </div>
 
-      <!-- OPEN HOUSE: delete this whole block if there isn't one -->
-      <p style="background:var(--cream-soft);border-left:3px solid var(--burgundy);padding:14px 18px;margin-top:26px;font-family:var(--sans);font-size:.95rem;">
-        <strong>Open houses:</strong> Thursday 10/8 from 4:30 to 6:30 pm, and Saturday 10/10 from 11 am to 1 pm
-      </p>
-
-      <div style="margin-top:32px;font-family:var(--serif-body);font-size:1.08rem;line-height:1.75;color:var(--cocoa);">
+      <div class="sign-desc" style="margin-top:32px;font-size:1.08rem;line-height:1.75;color:var(--cocoa);">
         <p>Comfortable and easy to love, this 2 bedroom, 2 bath home sits in the established Cooper Park neighborhood. The entry welcomes you with adorable built-ins, hooks and storage that make the perfect mudroom style drop zone. Inside, an open layout and refinished hardwood floors bring the warmth, while the updated kitchen features new tile flooring and a bright new window that fills the space with natural light.</p>
         <p>Out back, enjoy your own little escape with gardens, a paver patio and a pergola, perfect for morning coffee or summer evenings. Close to Cooper Park, Kops Park, Nash Park, Wauwatosa, I-41 and all the restaurants, coffee shops and neighborhood spots that make Milwaukee home.</p>
       </div>
 
-      <div class="sign-gallery">
-        <img src="/images/listings/l3/DSC00829.jpg" alt="Dining area with gallery wall and patio doors to the backyard">
-        <img src="/images/listings/l3/DSC00835.jpg" alt="Updated kitchen with painted cabinets, brass hardware, and window seat">
-        <img src="/images/listings/l3/DSC00843.jpg" alt="Bright living room with big windows">
-        <img src="/images/listings/l3/DSC00656.jpg" alt="Primary bedroom with barn door">
-        <img src="/images/listings/l3/DSC00820.jpg" alt="Updated bathroom with wainscoting and round mirror">
-        <img src="/images/listings/l3/DSC00730.jpg" alt="Refreshed entry with bench seat, cubbies, and wallpaper">
-        <img src="/images/listings/l3/DSC00762.jpg" alt="Cedar pergola over the paver patio in the backyard">
+      <div class="sign-story">
+        <figure>
+          <img src="/images/listings/l3/DSC00829.jpg" alt="Dining area with gallery wall and patio doors to the backyard" loading="lazy">
+          <figcaption>The dining room opens straight to the backyard through the patio doors</figcaption>
+        </figure>
+        <figure>
+          <img src="/images/listings/l3/DSC00835.jpg" alt="Updated kitchen with painted cabinets, brass hardware, and window seat" loading="lazy">
+          <figcaption>The refreshed kitchen: painted cabinets, brass hardware, and a window twice its old size</figcaption>
+        </figure>
+        <figure>
+          <img src="/images/listings/l3/DSC00843.jpg" alt="Bright living room with big windows" loading="lazy">
+          <figcaption>Big windows keep the living room bright all afternoon</figcaption>
+        </figure>
+        <figure>
+          <img src="/images/listings/l3/DSC00656.jpg" alt="Primary bedroom with barn door" loading="lazy">
+          <figcaption>The primary bedroom, tucked behind its barn door</figcaption>
+        </figure>
+        <figure>
+          <img src="/images/listings/l3/DSC00820.jpg" alt="Updated bathroom with wainscoting and round mirror" loading="lazy">
+          <figcaption>New tile, shiplap and updated lighting in the first floor bath</figcaption>
+        </figure>
+        <figure>
+          <img src="/images/listings/l3/DSC00730.jpg" alt="Refreshed entry with bench seat, cubbies, and wallpaper" loading="lazy">
+          <figcaption>The refreshed entry with its bench seat, cubbies and hooks</figcaption>
+        </figure>
+        <figure>
+          <img src="/images/listings/l3/DSC00762.jpg" alt="Cedar pergola over the paver patio in the backyard" loading="lazy">
+          <figcaption>The cedar pergola and paver patio, built for summer evenings</figcaption>
+        </figure>
       </div>
     </div>
   </section>
