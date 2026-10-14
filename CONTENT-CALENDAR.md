@@ -2,7 +2,7 @@
 
 **Cadence rule:** 1 post per week, drafted Monday morning. (Set by Emily 2026-07-26, replacing the earlier 3x-weekly ramp; one well-researched post beats three thin ones.)
 
-**Posts published:** 9
+**Posts published:** 10
 **Current mode:** weekly
 
 ## Data rules (non-negotiable)
@@ -45,6 +45,7 @@ Mark ✅ when published, ⬜ when still in queue. Order flexible; pick what feel
 - ⬜ Inspection day: what your inspector should be looking for
 - ⬜ Earnest money, appraisal gaps, and other terms nobody explains
 - ✅ 2026-09-21, Why is this house still on the market? *(Follow Up Boss: theme ranked #4 in an 800-note sweep, 2026-08-27 to 2026-09-21, with 8 mentions of reading a listing that has been sitting: days on market, price drops, and whether it is fair to offer under asking. Confirmed by web research, where "how much below asking on a 30+ day listing" is high-volume. Not covered in the Journal or FAQ, and deliberate counter-programming to the 2026-09-14 over-asking post. First post to use the GMAR August 2026 report, released 2026-09-14. Ran long at ~1,100 words, flagged for Emily's call.)*
+- ✅ 2026-10-14, What do Milwaukee condo dues cover? *(Follow Up Boss: 3-week sweep, 2026-09-21 to 2026-10-12, about 145 notes; condo and HOA questions ran about 3 mentions: what dues cover (water, garbage), what a normal range is, how to find special assessments, which comps count. Not covered in the Journal or FAQ. Replaced an inspection-waiver draft Emily rejected on 2026-10-14. Used the GMAR September 2026 report, released 2026-10-13; no condo breakout in that report. DRAFT, awaiting Emily approval.)*
 - ⬜ Should you waive your inspection contingency in Milwaukee right now?
 
 ### Seller playbook
