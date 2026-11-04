@@ -140,6 +140,22 @@
   to = "/prep-guide.html"
   status = 200
 
+# Questionnaire QR codes. These URLs are printed in the Buyer and Seller
+# Guides and can NEVER change. They forward to the Google Forms, so if a
+# form is ever replaced, change only the "to" line. 302 (not 301) so
+# browsers never cache the old form. Must stay ABOVE the 404 rule.
+[[redirects]]
+  from = "/buyer-questionnaire"
+  to = "https://docs.google.com/forms/d/e/1FAIpQLSeIEXEpYS7b6PGHI2Q-2ftXEj_t1JvkCCItX0kifrfZWOMoNA/viewform"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/seller-questionnaire"
+  to = "https://docs.google.com/forms/d/e/1FAIpQLScoLaueGe5tDapclq1qIp-3wDiBnnaTF2VYSMWSAKMpxW0W8A/viewform"
+  status = 302
+  force = true
+
 # Ensure 404.html is used
 [[redirects]]
   from = "/*"
