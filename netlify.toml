@@ -97,6 +97,14 @@
   to = "/l3.html"
   status = 200
 
+# Pre-photo prep guide. This URL is printed as a QR code in the Seller
+# Guide and linked in the listing consultation email, so it can NEVER
+# change. Must stay ABOVE the 404 rule.
+[[redirects]]
+  from = "/prep-guide"
+  to = "/prep-guide.html"
+  status = 200
+
 # Ensure 404.html is used
 [[redirects]]
   from = "/*"
