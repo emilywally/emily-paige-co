@@ -79,9 +79,9 @@
   status = 301
   force = true
 
-# Sign QR landing pages. These three URLs are printed on physical yard signs
-# and can NEVER change. Explicit rewrites so /l1 serves l1.html regardless of
-# Netlify's pretty-URL setting. Must stay ABOVE the 404 rule.
+# Sign QR landing pages. These ten URLs (/l1 through /l10) are printed on
+# physical yard signs and can NEVER change. Explicit rewrites so /l1 serves
+# l1.html regardless of Netlify's pretty-URL setting. Must stay ABOVE the 404 rule.
 [[redirects]]
   from = "/l1"
   to = "/l1.html"
@@ -95,6 +95,41 @@
 [[redirects]]
   from = "/l3"
   to = "/l3.html"
+  status = 200
+
+[[redirects]]
+  from = "/l4"
+  to = "/l4.html"
+  status = 200
+
+[[redirects]]
+  from = "/l5"
+  to = "/l5.html"
+  status = 200
+
+[[redirects]]
+  from = "/l6"
+  to = "/l6.html"
+  status = 200
+
+[[redirects]]
+  from = "/l7"
+  to = "/l7.html"
+  status = 200
+
+[[redirects]]
+  from = "/l8"
+  to = "/l8.html"
+  status = 200
+
+[[redirects]]
+  from = "/l9"
+  to = "/l9.html"
+  status = 200
+
+[[redirects]]
+  from = "/l10"
+  to = "/l10.html"
   status = 200
 
 # Pre-photo prep guide. This URL is printed as a QR code in the Seller
