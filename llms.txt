@@ -86,10 +86,19 @@ Emily Walczak is a licensed real estate agent in the State of Wisconsin (License
 
 - Homepage: https://emilypaigeandco.com/
 - About: https://emilypaigeandco.com/about.html
+- Milwaukee neighborhoods guide: https://emilypaigeandco.com/neighborhoods/
+  - Moving to Wauwatosa: https://emilypaigeandco.com/neighborhoods/wauwatosa.html
+  - Oak Creek guide: https://emilypaigeandco.com/neighborhoods/oak-creek.html
+  - St. Francis guide: https://emilypaigeandco.com/neighborhoods/st-francis.html
+- Buyer and seller services: https://emilypaigeandco.com/services/
 - Journal (blog): https://emilypaigeandco.com/blog/
-  - How mortgage pre-approval works in Milwaukee: https://emilypaigeandco.com/blog/mortgage-pre-approval-milwaukee.html
+  - What are seller closing costs in Wisconsin: https://emilypaigeandco.com/blog/seller-closing-costs-wisconsin.html
+  - Should you use a flat fee brokerage in Milwaukee: https://emilypaigeandco.com/blog/flat-fee-brokerage-milwaukee.html
+  - Milwaukee condo dues and what they cover: https://emilypaigeandco.com/blog/condo-fees-hoa-milwaukee.html
+  - How much over asking to offer in Milwaukee: https://emilypaigeandco.com/blog/how-much-over-asking-milwaukee.html
+  - What is your Milwaukee home worth: https://emilypaigeandco.com/blog/what-is-my-house-worth-milwaukee.html
   - Is now a good time to buy or sell in Milwaukee: https://emilypaigeandco.com/blog/good-time-to-buy-or-sell-milwaukee.html
-  - Welcome to the Journal: https://emilypaigeandco.com/blog/welcome.html
+  - Wauwatosa home buying costs: https://emilypaigeandco.com/blog/wauwatosa-home-buying-costs.html
 - FAQ: https://emilypaigeandco.com/faq.html
 - Reviews: https://emilypaigeandco.com/reviews.html
 - Contact: https://emilypaigeandco.com/contact.html
