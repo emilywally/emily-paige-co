@@ -2,7 +2,7 @@
 
 **Cadence rule:** 1 post per week, drafted Monday morning. (Set by Emily 2026-07-26, replacing the earlier 3x-weekly ramp; one well-researched post beats three thin ones.)
 
-**Posts published:** 10
+**Posts published:** 11
 **Current mode:** weekly
 
 ## Data rules (non-negotiable)
@@ -40,7 +40,7 @@ Mark ✅ when published, ⬜ when still in queue. Order flexible; pick what feel
 - ⬜ The Milwaukee first-time buyer roadmap: 8 steps from "curious" to "closed"
 - ✅ 2026-08-17, How much cash do you actually need to buy a house in Milwaukee? *(Follow Up Boss: 4 leads asked outright in the last 3 weeks plus ~4 more implied it on intake forms; people collapse down payment and closing costs into one number, and nobody knew repeat buyers face a higher conventional minimum. FAQ touches closing costs briefly; this goes deeper. Second post of the day.)*
 - ✅ 2026-09-14, How much over asking should you offer in Milwaukee? *(Follow Up Boss: top theme in a 650-note sweep, 2026-08-22 to 2026-09-14. 7 mentions of "how far over asking" and escalation clauses, plus 2 on appraisal gap. Confirmed by web research. Emily added the buyer-side comparables methodology, corrected the escalation framing, reframed the appraisal risk, and corrected who owes a shortfall. Same commit refreshed the stale 14-day DOM figure to 19 in faq.html and services/selling.html. Ran long at ~1,410 words by Emily's call.)*
-- ⬜ How much house can I actually afford? (Milwaukee-specific)
+- ✅ 2026-11-16, How much house can I afford in Milwaukee? *(Follow Up Boss: 3-week sweep, 2026-10-26 to 2026-11-16, 105 notes reviewed; affordability and financing readiness was the #1 theme (~7 mentions: affordability, paying down debt before pre-approval, commission income, student debt, a partner earning less). Confirmed by web research: "what salary do I need to afford a house in Milwaukee" content and r/milwaukee property tax threads. Goes deeper than the pre-approval post (which declines to size a number) and the cash-to-close and Wauwatosa costs posts (cash side only): this one is the monthly payment and Milwaukee County property tax spread. Used the GMAR September 2026 report, released 2026-10-13, and Freddie Mac PMMS of 2026-11-12. DRAFT, awaiting Emily approval.)*
 - ⬜ Wisconsin first-time buyer programs worth knowing about
 - ⬜ Inspection day: what your inspector should be looking for
 - ⬜ Earnest money, appraisal gaps, and other terms nobody explains
