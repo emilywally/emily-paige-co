@@ -79,9 +79,9 @@
   status = 301
   force = true
 
-# Sign QR landing pages. These three URLs are printed on physical yard signs
-# and can NEVER change. Explicit rewrites so /l1 serves l1.html regardless of
-# Netlify's pretty-URL setting. Must stay ABOVE the 404 rule.
+# Sign QR landing pages. These ten URLs (/l1 through /l10) are printed on
+# physical yard signs and can NEVER change. Explicit rewrites so /l1 serves
+# l1.html regardless of Netlify's pretty-URL setting. Must stay ABOVE the 404 rule.
 [[redirects]]
   from = "/l1"
   to = "/l1.html"
@@ -96,6 +96,65 @@
   from = "/l3"
   to = "/l3.html"
   status = 200
+
+[[redirects]]
+  from = "/l4"
+  to = "/l4.html"
+  status = 200
+
+[[redirects]]
+  from = "/l5"
+  to = "/l5.html"
+  status = 200
+
+[[redirects]]
+  from = "/l6"
+  to = "/l6.html"
+  status = 200
+
+[[redirects]]
+  from = "/l7"
+  to = "/l7.html"
+  status = 200
+
+[[redirects]]
+  from = "/l8"
+  to = "/l8.html"
+  status = 200
+
+[[redirects]]
+  from = "/l9"
+  to = "/l9.html"
+  status = 200
+
+[[redirects]]
+  from = "/l10"
+  to = "/l10.html"
+  status = 200
+
+# Pre-photo prep guide. This URL is printed as a QR code in the Seller
+# Guide and linked in the listing consultation email, so it can NEVER
+# change. Must stay ABOVE the 404 rule.
+[[redirects]]
+  from = "/prep-guide"
+  to = "/prep-guide.html"
+  status = 200
+
+# Questionnaire QR codes. These URLs are printed in the Buyer and Seller
+# Guides and can NEVER change. They forward to the Google Forms, so if a
+# form is ever replaced, change only the "to" line. 302 (not 301) so
+# browsers never cache the old form. Must stay ABOVE the 404 rule.
+[[redirects]]
+  from = "/buyer-questionnaire"
+  to = "https://docs.google.com/forms/d/e/1FAIpQLSeIEXEpYS7b6PGHI2Q-2ftXEj_t1JvkCCItX0kifrfZWOMoNA/viewform"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/seller-questionnaire"
+  to = "https://docs.google.com/forms/d/e/1FAIpQLScoLaueGe5tDapclq1qIp-3wDiBnnaTF2VYSMWSAKMpxW0W8A/viewform"
+  status = 302
+  force = true
 
 # Ensure 404.html is used
 [[redirects]]
